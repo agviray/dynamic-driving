@@ -13,7 +13,7 @@ nav {
   & > div {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     position: relative;
     max-width: 2000px;
     margin: 0 auto;
@@ -77,7 +77,7 @@ nav {
       line-height: 56px;
     }
 
-    // - Navigation Menu (the links container) styles
+    // - Navigation Menu styles
     .nav-menu {
       position: fixed;
       left: 0;
@@ -86,12 +86,29 @@ nav {
       width: 70vw;
       padding: 100px 0;
       color: white;
-      background-color: #e30b0d;
+      background-color: rgba(229, 11, 14, 1);
       transform: translate(-100%);
       transition: all 0.3s ease;
 
       &.is-open {
         transform: translate(0);
+      }
+
+      ul {
+        li {
+          span {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            padding: 0.75rem 0;
+            background-color: rgba(229, 11, 14, 1);
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: rgb(185, 10, 13);
+            }
+          }
+        }
       }
     }
   }
