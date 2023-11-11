@@ -3,6 +3,15 @@ body {
   min-width: 350px;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 h1,
 h2,
 h3,
@@ -30,4 +39,57 @@ ul {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  background-color: #e30b0d;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  max-width: 2000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 10px;
+}
+nav > div .hamburger {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+}
+nav > div .hamburger:hover {
+  cursor: pointer;
+}
+nav > div .hamburger > span {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  background-color: #f3f3f3;
+  z-index: 1;
+}
+nav > div .logo-container {
+  color: white;
+  display: block;
+  line-height: 56px;
+}
+nav > div .nav-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 70vw;
+  padding: 100px 0;
+  color: white;
+  background-color: #e30b0d;
+  transform: translate(-100%);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=main.css.map */
