@@ -17,7 +17,10 @@ const Navbar = () => {
         >
           <span></span>
         </div>
-        <div className={`overlay ${isMenuOpen ? 'is-open' : ''}`}></div>
+        <div
+          className={`overlay ${isMenuOpen ? 'is-open' : ''}`}
+          onClick={toggleMenu}
+        ></div>
         <Link to="/">
           <span className="logo-container">Dynamic Driving</span>
         </Link>
