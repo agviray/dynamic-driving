@@ -1,12 +1,13 @@
 import React from 'react';
 import '../sass/main.scss';
+// - Components
+import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
   return (
     <>
       <header>
-        <h2>Header Content</h2>
-        <p>The header content will go here</p>
+        <Navbar />
       </header>
       <main>{children}</main>
       <footer>
