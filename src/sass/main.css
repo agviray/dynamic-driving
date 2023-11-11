@@ -66,6 +66,13 @@ nav > div .hamburger {
   height: 25px;
   z-index: 1;
 }
+nav > div .hamburger.is-open > span {
+  transform: rotate(135deg);
+}
+nav > div .hamburger.is-open > span::before, nav > div .hamburger.is-open > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
 nav > div .hamburger:hover {
   cursor: pointer;
 }
@@ -75,6 +82,7 @@ nav > div .hamburger > span {
   position: relative;
   background-color: #f3f3f3;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 nav > div .hamburger > span::before, nav > div .hamburger > span::after {
   content: "";
@@ -104,4 +112,7 @@ nav > div .nav-menu {
   background-color: #e30b0d;
   transform: translate(-100%);
   transition: all 0.3s ease;
+}
+nav > div .nav-menu.is-open {
+  transform: translate(0);
 }/*# sourceMappingURL=main.css.map */

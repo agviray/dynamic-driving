@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav>
       <div>
-        <div className="hamburger">
+        <div
+          className={`hamburger ${isMenuOpen ? 'is-open' : ''}`}
+          onClick={toggleMenu}
+        >
           <span></span>
         </div>
         <Link to="/">
           <span className="logo-container">Dynamic Driving</span>
         </Link>
-        <div className="nav-menu">
+        <div className={`nav-menu ${isMenuOpen ? 'is-open' : ''}`}>
           <ul>
             <li>About</li>
             <li>Services</li>
