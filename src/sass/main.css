@@ -80,7 +80,7 @@ nav > div .hamburger > span {
   width: 100%;
   height: 1px;
   position: relative;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   z-index: 1;
   transition: all 0.3s ease;
 }
@@ -115,7 +115,7 @@ nav > div .overlay.is-open {
   background-color: rgba(53, 66, 91, 0.6);
 }
 nav > div .logo-container {
-  color: white;
+  color: #ffffff;
   display: block;
   line-height: 56px;
 }
@@ -126,7 +126,7 @@ nav > div .nav-menu {
   bottom: 0;
   width: 70vw;
   padding: 100px 0;
-  color: white;
+  color: #ffffff;
   background-color: rgb(229, 11, 14);
   transform: translate(-100%);
   transition: all 0.3s ease;
@@ -139,6 +139,7 @@ nav > div .nav-menu ul li span {
   display: inline-block;
   text-align: center;
   padding: 0.75rem 0;
+  color: #ffffff;
   background-color: rgb(229, 11, 14);
   transition: all 0.3s ease;
 }
