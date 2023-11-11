@@ -7,8 +7,6 @@ const Navbar = () => {
       <div>
         <div className="hamburger">
           <span></span>
-          <span></span>
-          <span></span>
         </div>
         <Link to="/">
           <span className="logo-container">Dynamic Driving</span>

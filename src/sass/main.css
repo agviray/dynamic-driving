@@ -76,6 +76,18 @@ nav > div .hamburger > span {
   background-color: #f3f3f3;
   z-index: 1;
 }
+nav > div .hamburger > span::before, nav > div .hamburger > span::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 100%;
+  height: 1px;
+  background: inherit;
+  z-index: 1;
+}
+nav > div .hamburger > span::after {
+  top: 7px;
+}
 nav > div .logo-container {
   color: white;
   display: block;
