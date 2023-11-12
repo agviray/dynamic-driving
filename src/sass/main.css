@@ -45,6 +45,85 @@ ul {
   font-family: "Serpentine Medium";
   src: url(../fonts/serpentine_ff/Serpentine-Medium.otf);
 }
+.hero {
+  position: relative;
+}
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  margin-top: 56px;
+  padding: 80px 0;
+  background-image: url("../images/woman-sitting-in-car.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.hero > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  opacity: 0.5;
+}
+.hero > div h1,
+.hero > div .characters {
+  position: relative;
+}
+.hero > div h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+.hero > div h1 > span {
+  display: inline-block;
+  text-align: center;
+}
+.hero > div h1 > span:first-child {
+  font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+}
+.hero > div h1 > span:last-child {
+  padding: 0.25rem 0.75rem;
+  font-size: 16px;
+  color: gray;
+  background-color: #ffffff;
+}
+.hero > div .characters {
+  padding-top: 0.5rem;
+  width: 200px;
+  margin: 0 auto;
+}
+.hero > div .characters span {
+  display: inline-block;
+}
+.hero > div .characters span img {
+  max-width: 100%;
+}
+.hero > div .book-button {
+  position: relative;
+  padding-top: 2.5rem;
+}
+.hero > div .book-button > span {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: rgb(229, 11, 14);
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.hero > div .book-button > span:hover {
+  cursor: pointer;
+  background-color: rgb(203, 11, 15);
+}
+
 nav {
   position: relative;
   width: 100%;
@@ -176,83 +255,4 @@ nav > div .nav-menu ul li span:hover {
     padding: 0 1rem;
     line-height: 56px;
   }
-}
-
-.hero {
-  position: relative;
-}
-.hero > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 300px;
-  margin-top: 56px;
-  padding: 80px 0;
-  background-image: url("../images/woman-sitting-in-car.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-.hero > div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #333333;
-  opacity: 0.5;
-}
-.hero > div h1,
-.hero > div .characters {
-  position: relative;
-}
-.hero > div h1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
-  color: #ffffff;
-}
-.hero > div h1 > span {
-  display: inline-block;
-  text-align: center;
-}
-.hero > div h1 > span:first-child {
-  font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: 30px;
-}
-.hero > div h1 > span:last-child {
-  padding: 0.25rem 0.75rem;
-  font-size: 16px;
-  color: gray;
-  background-color: #ffffff;
-}
-.hero > div .characters {
-  padding-top: 0.5rem;
-  width: 200px;
-  margin: 0 auto;
-}
-.hero > div .characters span {
-  display: inline-block;
-}
-.hero > div .characters span img {
-  max-width: 100%;
-}
-.hero > div .book-button {
-  position: relative;
-  padding-top: 2.5rem;
-}
-.hero > div .book-button > span {
-  padding: 0.5rem 1rem;
-  color: #ffffff;
-  background-color: rgb(229, 11, 14);
-  border-radius: 3px;
-  font-size: 20px;
-  font-weight: 900;
-}
-.hero > div .book-button > span:hover {
-  cursor: pointer;
-  background-color: rgb(203, 11, 15);
 }/*# sourceMappingURL=main.css.map */
