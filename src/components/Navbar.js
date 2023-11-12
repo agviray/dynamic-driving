@@ -22,7 +22,7 @@ const Navbar = () => {
           onClick={toggleMenu}
         ></div>
         <Link to="/">
-          <span className="logo-container">Dynamic Driving</span>
+          <span className="logo-container">DYNAMIC DRIVING</span>
         </Link>
         <div className={`nav-menu ${isMenuOpen ? 'is-open' : ''}`}>
           <ul>

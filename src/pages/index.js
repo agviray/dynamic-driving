@@ -1,10 +1,25 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import characters from '../images/characters.png';
 
 const Home = () => {
   return (
     <Layout>
-      <h2>This is the rendered children content</h2>
+      <section>
+        <div className="hero">
+          <div>
+            <h1>
+              <span>DYNAMIC DRIVING</span>
+              <span>DRIVING SCHOOL</span>
+            </h1>
+            <div className="characters">
+              <span>
+                <img src={characters} alt="characters" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
