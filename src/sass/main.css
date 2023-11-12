@@ -239,4 +239,20 @@ nav > div .nav-menu ul li span:hover {
 }
 .hero > div .characters span img {
   max-width: 100%;
+}
+.hero > div .book-button {
+  position: relative;
+  padding-top: 2.5rem;
+}
+.hero > div .book-button > span {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: rgb(229, 11, 14);
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.hero > div .book-button > span:hover {
+  cursor: pointer;
+  background-color: rgb(203, 11, 15);
 }/*# sourceMappingURL=main.css.map */

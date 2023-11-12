@@ -17,6 +17,9 @@ const Home = () => {
                 <img src={characters} alt="characters" />
               </span>
             </div>
+            <div className="book-button">
+              <span>Let's Drive!</span>
+            </div>
           </div>
         </div>
       </section>
