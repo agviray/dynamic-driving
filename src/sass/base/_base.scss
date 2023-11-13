@@ -16,18 +16,17 @@ h1,
 h2,
 h3,
 h4 {
-  // TODO: Apply global/main font color here.
   color: $mainBlack;
 }
 
 p {
   line-height: 1.5;
-  // TODO: Apply global/main font color here.
+  color: $mainBlack;
 }
 
 a {
   text-decoration: none;
-  // TODO: Apply global/main font color here.
+  color: $mainBlack;
 }
 
 ul {

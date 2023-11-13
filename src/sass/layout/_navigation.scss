@@ -5,7 +5,7 @@ nav {
   position: relative;
   width: 100%;
   height: 56px;
-  background-color: #e30b0d; // TODO: Make this a variable.
+  background-color: $midRed;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 
@@ -18,7 +18,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
 
     // - Hamburger menu toggler
     .hamburger {
@@ -112,10 +112,12 @@ nav {
       padding: 100px 0;
       color: $white;
       background-color: $midRed;
+      opacity: 0;
       transform: translate(-100%);
       transition: all 0.3s ease;
 
       &.is-open {
+        opacity: 1;
         transform: translate(0);
       }
 
@@ -151,6 +153,7 @@ nav {
         height: inherit;
         width: auto;
         padding: 0;
+        opacity: 1;
         transform: translate(0);
 
         ul {

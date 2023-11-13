@@ -1,14 +1,17 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import HeroContent from '../components/home/HeroContent';
+import AboutContent from '../components/home/AboutContent';
 
 const Home = () => {
   return (
     <Layout>
-      <section>
+      <section id="hero">
         <HeroContent />
       </section>
-      <section></section>
+      <section id="about">
+        <AboutContent />
+      </section>
     </Layout>
   );
 };
