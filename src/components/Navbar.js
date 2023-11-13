@@ -31,11 +31,15 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    return isMenuOpen ? setIsMenuOpen(false) : null;
+  };
+
   const renderedContent = navlinks.map(({ linkName, href }, index) => {
     return (
       <li key={index}>
         <a href={href}>
-          <span>{linkName}</span>
+          <span onClick={closeMobileMenu}>{linkName}</span>
         </a>
       </li>
     );
