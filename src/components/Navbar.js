@@ -1,12 +1,45 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
+const navlinks = [
+  {
+    linkName: 'Home',
+    href: '/',
+  },
+  {
+    linkName: 'About',
+    href: '#about',
+  },
+  {
+    linkName: 'Services',
+    href: '#services',
+  },
+  {
+    linkName: 'Reviews',
+    href: '#reviews',
+  },
+  {
+    linkName: 'Contact',
+    href: '#contact',
+  },
+];
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const renderedContent = navlinks.map(({ linkName, href }, index) => {
+    return (
+      <li key={index}>
+        <a href={href}>
+          <span>{linkName}</span>
+        </a>
+      </li>
+    );
+  });
 
   return (
     <nav>
@@ -25,33 +58,7 @@ const Navbar = () => {
           <span className="logo-container">DYNAMIC DRIVING</span>
         </Link>
         <div className={`nav-menu ${isMenuOpen ? 'is-open' : ''}`}>
-          <ul>
-            <li>
-              <a href="/">
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#about">
-                <span>About</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>Services</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>Reviews</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
+          <ul>{renderedContent}</ul>
         </div>
       </div>
     </nav>
