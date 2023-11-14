@@ -7,7 +7,9 @@ const HeroContent = () => {
     <div className="hero-content">
       <h1>
         <span>DYNAMIC DRIVING</span>
-        <span>DRIVING SCHOOL</span>
+        <span>
+          <span>DRIVING SCHOOL</span>
+        </span>
       </h1>
       <div className="characters">
         <span>

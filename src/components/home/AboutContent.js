@@ -5,10 +5,8 @@ const AboutContent = () => {
     <div className="about-content">
       <h2>About</h2>
       <blockquote>
-        <p>
-          <span>Learn the right skills and</span>
-          <span>drive safely with confidence</span>
-        </p>
+        <p>Learn the right skills and</p>
+        <p>drive safely with confidence</p>
       </blockquote>
       <div className="main-content">
         <p>
