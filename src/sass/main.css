@@ -47,6 +47,10 @@ ul {
   font-family: "Serpentine Medium";
   src: url(../fonts/serpentine_ff/Serpentine-Medium.otf);
 }
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .about-content h2 {
   font-size: 24px;
   padding-bottom: 1rem;

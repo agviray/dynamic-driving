@@ -2,6 +2,9 @@
   @include sectionContentHeading;
   @include sectionContentParagraph;
 
+  max-width: $sectionContentMaxWidth;
+  margin: 0 auto;
+
   blockquote {
     & > p {
       padding: 1rem 0;
