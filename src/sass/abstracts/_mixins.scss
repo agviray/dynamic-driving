@@ -1,0 +1,16 @@
+@mixin sectionContentHeading {
+  h2 {
+    font-size: 24px;
+    padding-bottom: 1rem;
+  }
+}
+
+@mixin sectionContentParagraph {
+  .main-content {
+    p {
+      &:not(:nth-of-type(1)) {
+        padding-top: 1rem;
+      }
+    }
+  }
+}

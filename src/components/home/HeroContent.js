@@ -4,7 +4,7 @@ import BookButton from '../BookButton';
 
 const HeroContent = () => {
   return (
-    <div className="hero">
+    <div className="hero-content">
       <h1>
         <span>DYNAMIC DRIVING</span>
         <span>DRIVING SCHOOL</span>
