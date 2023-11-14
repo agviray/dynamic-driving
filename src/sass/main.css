@@ -16,17 +16,17 @@ h1,
 h2,
 h3,
 h4 {
-  color: #333333;
+  color: hsl(0, 0%, 20%);
 }
 
 p {
   line-height: 1.5;
-  color: #333333;
+  color: hsl(0, 0%, 20%);
 }
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: hsl(0, 0%, 20%);
 }
 
 ul {
@@ -46,9 +46,6 @@ ul {
 @font-face {
   font-family: "Serpentine Medium";
   src: url(../fonts/serpentine_ff/Serpentine-Medium.otf);
-}
-.about-content {
-  background-color: #ffffff;
 }
 .about-content h2 {
   font-size: 24px;
@@ -116,7 +113,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #333333;
+  background-color: hsl(0, 0%, 20%);
   opacity: 0.3;
 }
 .hero-content h1,
@@ -177,8 +174,12 @@ ul {
   }
 }
 
-.services-content {
-  background-color: #ffffff;
+.services-content h2 {
+  font-size: 24px;
+  padding-bottom: 1rem;
+}
+.services-content .main-content p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
 }
 
 nav {
@@ -319,4 +320,10 @@ nav > div .nav-menu ul li span:hover {
 
 section:not(#hero) {
   padding: 50px 15px;
+}
+section#about {
+  background-color: #ffffff;
+}
+section#services {
+  background-color: rgb(237, 238, 238);
 }/*# sourceMappingURL=main.css.map */

@@ -2,8 +2,6 @@
   @include sectionContentHeading;
   @include sectionContentParagraph;
 
-  background-color: $white;
-
   blockquote {
     & > p {
       padding: 1rem 0;

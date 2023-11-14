@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import HeroContent from '../components/home/HeroContent';
 import AboutContent from '../components/home/AboutContent';
+import ServicesContent from '../components/home/ServicesContent';
 
 const Home = () => {
   return (
@@ -11,6 +12,9 @@ const Home = () => {
       </section>
       <section id="about">
         <AboutContent />
+      </section>
+      <section id="services">
+        <ServicesContent />
       </section>
     </Layout>
   );

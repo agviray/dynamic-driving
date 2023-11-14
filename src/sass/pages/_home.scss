@@ -2,4 +2,12 @@ section {
   &:not(#hero) {
     padding: 50px 15px;
   }
+
+  &#about {
+    background-color: $white;
+  }
+
+  &#services {
+    background-color: $lightGray;
+  }
 }

@@ -1,6 +1,4 @@
 .services-content {
-  // @include sectionContentHeading;
-  // @include sectionContentParagraph;
-
-  background-color: $white;
+  @include sectionContentHeading;
+  @include sectionContentParagraph;
 }
