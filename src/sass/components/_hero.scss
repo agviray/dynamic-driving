@@ -98,23 +98,4 @@
       padding-top: 1rem;
     }
   }
-
-  .book-button {
-    position: relative;
-    padding-top: 2.5rem;
-
-    & > span {
-      padding: 0.5rem 1rem;
-      color: $white;
-      background-color: $midRed;
-      border-radius: 3px;
-      font-size: 20px;
-      font-weight: 900;
-
-      &:hover {
-        cursor: pointer;
-        background-color: $darkRed;
-      }
-    }
-  }
 }

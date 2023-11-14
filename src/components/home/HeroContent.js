@@ -1,5 +1,6 @@
 import React from 'react';
 import characters from '../../images/characters.png';
+import BookButton from '../BookButton';
 
 const HeroContent = () => {
   return (
@@ -13,9 +14,7 @@ const HeroContent = () => {
           <img src={characters} alt="characters" />
         </span>
       </div>
-      <div className="book-button">
-        <span>Let's Drive!</span>
-      </div>
+      <BookButton text={`Request An Appointment`} />
     </div>
   );
 };
