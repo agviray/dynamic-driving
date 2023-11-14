@@ -91,8 +91,7 @@ ul {
   justify-content: center;
   align-items: center;
   min-height: 300px;
-  margin-top: 56px;
-  padding: 80px 0;
+  padding: 136px 0 80px 0;
   background-image: url("../images/woman-sitting-in-car-01.jpg");
   background-position: center center;
   background-size: cover;
@@ -323,7 +322,7 @@ nav > div .nav-menu ul li span:hover {
 }
 
 section:not(#hero) {
-  padding: 50px 15px;
+  padding: 106px 15px;
 }
 section#about {
   background-color: #ffffff;

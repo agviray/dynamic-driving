@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const navlinks = [
   {
     linkName: 'Home',
-    href: '/',
+    href: '/#hero',
   },
   {
     linkName: 'About',

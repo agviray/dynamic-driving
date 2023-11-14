@@ -1,6 +1,6 @@
 section {
   &:not(#hero) {
-    padding: 50px 15px;
+    padding: calc($headerHeight + 50px) 15px;
   }
 
   &#about {
