@@ -53,7 +53,7 @@ ul {
 }
 .about-content h2 {
   font-size: 24px;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
 }
 .about-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
@@ -93,16 +93,11 @@ ul {
   justify-content: center;
   align-items: center;
   min-height: 300px;
-  padding: 136px 0 80px 0;
+  padding: 156px 0 100px 0;
   background-image: url("../images/woman-sitting-in-car-01.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media screen and (min-width: 800px) {
-  .hero-content {
-    padding: 100px 0;
-  }
 }
 @media screen and (min-width: 1100px) {
   .hero-content {
@@ -185,7 +180,7 @@ ul {
 }
 .services-content h2 {
   font-size: 24px;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
 }
 .services-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
@@ -203,7 +198,7 @@ ul {
 }
 .why-content h2 {
   font-size: 24px;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
 }
 .why-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
@@ -392,7 +387,7 @@ nav > div .nav-menu ul li span:hover {
 }
 
 section:not(#hero) {
-  padding: 106px 15px;
+  padding: 76px 15px;
 }
 section#about {
   background-color: #ffffff;
