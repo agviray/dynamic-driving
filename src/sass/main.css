@@ -197,6 +197,24 @@ ul {
   grid-template-columns: 1fr;
 }
 
+.why-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.why-content h2 {
+  font-size: 24px;
+  padding-bottom: 1.75rem;
+}
+.why-content .main-content p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
+}
+
+.why-collection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1rem;
+}
+
 nav {
   position: relative;
   width: 100%;
@@ -339,6 +357,6 @@ section:not(#hero) {
 section#about {
   background-color: #ffffff;
 }
-section#services {
+section#why {
   background-color: rgb(237, 238, 238);
 }/*# sourceMappingURL=main.css.map */

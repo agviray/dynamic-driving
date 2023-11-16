@@ -1,0 +1,12 @@
+.why-content {
+  @include sectionContentHeading;
+  @include sectionContentParagraph;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-collection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1rem;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import HeroContent from '../components/home/HeroContent';
+import WhyContent from '../components/home/WhyContent';
 import AboutContent from '../components/home/AboutContent';
 import ServicesContent from '../components/home/ServicesContent';
 
@@ -9,6 +10,9 @@ const Home = () => {
     <Layout>
       <section id="hero">
         <HeroContent />
+      </section>
+      <section id="why">
+        <WhyContent />
       </section>
       <section id="services">
         <ServicesContent />
