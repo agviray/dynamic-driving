@@ -3,10 +3,58 @@
   @include sectionContentParagraph;
   max-width: 1000px;
   margin: 0 auto;
+
+  .main-content {
+    padding-top: 1rem;
+  }
 }
 
 .why-collection {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem 1rem;
+}
+
+.card {
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+  // - Inner container
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1.5rem;
+      border-radius: 50px;
+      background-color: $mainBlack;
+
+      & > span {
+        display: inline-block;
+        width: 40px;
+        line-height: 0;
+        font-size: 0;
+
+        & > img {
+          width: 100%;
+        }
+      }
+    }
+
+    h3 {
+      padding-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .text-container {
+      text-align: center;
+    }
+  }
 }

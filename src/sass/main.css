@@ -208,11 +208,51 @@ ul {
 .why-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
 }
+.why-content .main-content {
+  padding-top: 1rem;
+}
 
 .why-collection {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem 1rem;
+}
+
+.card {
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+}
+.card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card > div .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 20%);
+}
+.card > div .icon-container > span {
+  display: inline-block;
+  width: 40px;
+  line-height: 0;
+  font-size: 0;
+}
+.card > div .icon-container > span > img {
+  width: 100%;
+}
+.card > div h3 {
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+.card > div .text-container {
+  text-align: center;
 }
 
 nav {
@@ -358,5 +398,8 @@ section#about {
   background-color: #ffffff;
 }
 section#why {
+  background-color: #ffffff;
+}
+section#services {
   background-color: rgb(237, 238, 238);
 }/*# sourceMappingURL=main.css.map */
