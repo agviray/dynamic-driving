@@ -1,4 +1,12 @@
 .services-content {
   @include sectionContentHeading;
   @include sectionContentParagraph;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.services-collection {
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 1fr;
 }

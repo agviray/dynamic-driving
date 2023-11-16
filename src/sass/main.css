@@ -53,7 +53,7 @@ ul {
 }
 .about-content h2 {
   font-size: 24px;
-  padding-bottom: 1rem;
+  padding-bottom: 1.75rem;
 }
 .about-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
@@ -179,12 +179,22 @@ ul {
   }
 }
 
+.services-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .services-content h2 {
   font-size: 24px;
-  padding-bottom: 1rem;
+  padding-bottom: 1.75rem;
 }
 .services-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
+}
+
+.services-collection {
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 1fr;
 }
 
 nav {

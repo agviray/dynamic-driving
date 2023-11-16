@@ -5,26 +5,89 @@ const ServicesContent = () => {
     <div className="services-content">
       <h2>Our Services</h2>
       <div className="main-content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-          sequi! Consequatur hic, sit praesentium a vero porro veniam aliquid
-          maiores aliquam aspernatur molestias perspiciatis quibusdam doloribus
-          vitae explicabo tenetur fugit!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          necessitatibus facere suscipit repudiandae corporis nam nesciunt
-          perferendis voluptate aperiam quisquam veniam, nihil a ducimus
-          doloremque ex architecto ipsum temporibus illum in quos sunt? Quo
-          maiores facilis nesciunt voluptatem beatae tempora, eaque illum
-          tempore dolor ratione consequatur ipsum fugit cumque amet.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          recusandae porro atque voluptate quis eos numquam eaque, earum culpa
-          ab minima dolor officiis voluptatibus dolorum maiores impedit nulla
-          laboriosam quaerat.
-        </p>
+        <div className="services-collection">
+          <article className="services-collection-item">
+            <div>
+              <span className="image-container">
+                <img src="" alt="" />
+              </span>
+              <h3>Service 01</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                velit eaque debitis veritatis, magnam aperiam amet nemo in
+                dolor? Quos!
+              </p>
+            </div>
+          </article>
+          <article className="services-collection-item">
+            <div>
+              <span className="image-container">
+                <img src="" alt="" />
+              </span>
+              <h3>Service 02</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                velit eaque debitis veritatis, magnam aperiam amet nemo in
+                dolor? Quos!
+              </p>
+            </div>
+          </article>
+          <article className="services-collection-item">
+            <div>
+              <span className="image-container">
+                <img src="" alt="" />
+              </span>
+              <h3>Service 03</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                velit eaque debitis veritatis, magnam aperiam amet nemo in
+                dolor? Quos!
+              </p>
+            </div>
+          </article>
+          <article className="services-collection-item">
+            <div>
+              <span className="image-container">
+                <img src="" alt="" />
+              </span>
+              <h3>Service 04</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                velit eaque debitis veritatis, magnam aperiam amet nemo in
+                dolor? Quos!
+              </p>
+            </div>
+          </article>
+          <article className="services-collection-item">
+            <div>
+              <span className="image-container">
+                <img src="" alt="" />
+              </span>
+              <h3>Service 05</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                velit eaque debitis veritatis, magnam aperiam amet nemo in
+                dolor? Quos!
+              </p>
+            </div>
+          </article>
+          <article className="services-collection-item">
+            <div>
+              <span className="image-container">
+                <img src="" alt="" />
+              </span>
+              <span className="image-container">
+                <img src="" alt="" />
+              </span>
+              <h3>Service 06</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                velit eaque debitis veritatis, magnam aperiam amet nemo in
+                dolor? Quos!
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   );

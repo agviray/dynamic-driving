@@ -10,9 +10,6 @@ const Home = () => {
       <section id="hero">
         <HeroContent />
       </section>
-      <section id="about">
-        <AboutContent />
-      </section>
       <section id="services">
         <ServicesContent />
       </section>
