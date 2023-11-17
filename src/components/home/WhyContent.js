@@ -2,12 +2,15 @@ import React from 'react';
 import instructor from '../../images/instructor.png';
 import checklist from '../../images/checklist.png';
 import calendar from '../../images/calendar.png';
+import instructorAndStudent from '../../images/driving-instructor-teaching-student.jpg';
+import driverWithKeys from '../../images/driving-student-holding-keys.jpeg';
+import calendarDayOff from '../../images/calendar-marked-with-day-off.jpeg';
 
 const whyCards = [
   {
-    icon: {
-      src: instructor,
-      alt: 'Instructor icon',
+    image: {
+      src: instructorAndStudent,
+      alt: 'Driving instructor teaching student',
     },
     heading: 'Experienced Instructors',
     text: `Our team of certified and experienced instructors brings a
@@ -15,9 +18,9 @@ const whyCards = [
     you receive the highest quality instruction.`,
   },
   {
-    icon: {
-      src: checklist,
-      alt: 'Checklist icon',
+    image: {
+      src: driverWithKeys,
+      alt: 'Student driver happily holding keys',
     },
     heading: 'Customized Learning Plans',
     text: `We recognize that every student is unique. Our personalized
@@ -25,9 +28,9 @@ const whyCards = [
     learning style, maximizing your chances of success.`,
   },
   {
-    icon: {
-      src: calendar,
-      alt: 'Calendar icon',
+    image: {
+      src: calendarDayOff,
+      alt: 'Calendar marked with a day off',
     },
     heading: 'Flexible Scheduling',
     text: `Life can be busy, and we understand that. That's why we offer
@@ -37,18 +40,18 @@ const whyCards = [
 ];
 
 const WhyContent = () => {
-  const renderedContent = whyCards.map(({ icon, heading, text }, index) => {
+  const renderedContent = whyCards.map(({ image, heading, text }, index) => {
     return (
       <article className="card" key={index}>
         <div>
-          <div className="icon-container">
-            <span className="icon">
-              <img src={icon.src} alt={icon.alt} />
-            </span>
-          </div>
-          <h3>{heading}</h3>
-          <div className="text-container">
-            <p>{text}</p>
+          <span className="image-container">
+            <img src={image.src} alt={image.alt} />
+          </span>
+          <div className="card-main-content">
+            <h3>{heading}</h3>
+            <div className="text-container">
+              <p>{text}</p>
+            </div>
           </div>
         </div>
       </article>

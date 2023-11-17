@@ -4,7 +4,7 @@
   max-width: 1000px;
   margin: 0 auto;
 
-  .main-content {
+  & > .main-content {
     padding-top: 1rem;
   }
 }
@@ -12,49 +12,62 @@
 .why-collection {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem 1rem;
+  gap: 8rem 1rem;
+  padding-bottom: 8rem;
 }
 
 .card {
-  padding: 2rem 1rem;
+  max-width: 400px;
+  margin: 0 auto;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
-    rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+
   // - Inner container
   & > div {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .icon-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80px;
-      height: 80px;
-      margin-bottom: 1.5rem;
-      border-radius: 50px;
-      background-color: $mainBlack;
-
-      & > span {
-        display: inline-block;
-        width: 40px;
-        line-height: 0;
-        font-size: 0;
-
-        & > img {
-          width: 100%;
-        }
+    & > .image-container {
+      display: inline-block;
+      line-height: 0;
+      font-size: 0;
+      img {
+        width: 100%;
       }
     }
 
-    h3 {
-      padding-bottom: 1.25rem;
-      text-align: center;
-    }
+    & > .card-main-content {
+      position: absolute;
+      bottom: -115px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 1.75rem 1rem;
+      box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+        rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+      z-index: 1;
 
-    .text-container {
-      text-align: center;
+      &::before {
+        content: '';
+        background-color: $white;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      h3 {
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+
+      .text-container {
+        text-align: center;
+        font-size: 14px;
+      }
     }
   }
 }

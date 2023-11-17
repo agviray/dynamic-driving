@@ -203,51 +203,63 @@ ul {
 .why-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
 }
-.why-content .main-content {
+.why-content > .main-content {
   padding-top: 1rem;
 }
 
 .why-collection {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem 1rem;
+  gap: 8rem 1rem;
+  padding-bottom: 8rem;
 }
 
 .card {
-  padding: 2rem 1rem;
+  max-width: 400px;
+  margin: 0 auto;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
 }
 .card > div {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.card > div .icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1.5rem;
-  border-radius: 50px;
-  background-color: hsl(0, 0%, 20%);
-}
-.card > div .icon-container > span {
+.card > div > .image-container {
   display: inline-block;
-  width: 40px;
   line-height: 0;
   font-size: 0;
 }
-.card > div .icon-container > span > img {
+.card > div > .image-container img {
   width: 100%;
 }
-.card > div h3 {
-  padding-bottom: 1.25rem;
+.card > div > .card-main-content {
+  position: absolute;
+  bottom: -115px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.75rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+  z-index: 1;
+}
+.card > div > .card-main-content::before {
+  content: "";
+  background-color: #ffffff;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.card > div > .card-main-content h3 {
+  padding-bottom: 1rem;
   text-align: center;
 }
-.card > div .text-container {
+.card > div > .card-main-content .text-container {
   text-align: center;
+  font-size: 14px;
 }
 
 nav {
