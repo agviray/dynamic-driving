@@ -1,16 +1,20 @@
 import React from 'react';
-import instructor from '../../images/instructor.png';
-import checklist from '../../images/checklist.png';
-import calendar from '../../images/calendar.png';
 import instructorAndStudent from '../../images/driving-instructor-teaching-student.jpg';
 import driverWithKeys from '../../images/driving-student-holding-keys.jpeg';
 import calendarDayOff from '../../images/calendar-marked-with-day-off.jpeg';
+import instructorIcon from '../../images/instructor.png';
+import checklistIcon from '../../images/checklist.png';
+import calendarIcon from '../../images/calendar.png';
 
 const whyCards = [
   {
     image: {
       src: instructorAndStudent,
       alt: 'Driving instructor teaching student',
+    },
+    icon: {
+      src: instructorIcon,
+      alt: 'Instructor icon',
     },
     heading: 'Experienced Instructors',
     text: `Our team of certified and experienced instructors brings a
@@ -22,6 +26,10 @@ const whyCards = [
       src: driverWithKeys,
       alt: 'Student driver happily holding keys',
     },
+    icon: {
+      src: checklistIcon,
+      alt: 'Checklist Icon',
+    },
     heading: 'Customized Learning Plans',
     text: `We recognize that every student is unique. Our personalized
     learning plans cater to your individual needs, pace, and
@@ -32,6 +40,10 @@ const whyCards = [
       src: calendarDayOff,
       alt: 'Calendar marked with a day off',
     },
+    icon: {
+      src: calendarIcon,
+      alt: 'Calendar icon',
+    },
     heading: 'Flexible Scheduling',
     text: `Life can be busy, and we understand that. That's why we offer
     flexible scheduling options to accommodate your commitments
@@ -40,23 +52,49 @@ const whyCards = [
 ];
 
 const WhyContent = () => {
-  const renderedContent = whyCards.map(({ image, heading, text }, index) => {
-    return (
-      <article className="card" key={index}>
-        <div>
-          <span className="image-container">
-            <img src={image.src} alt={image.alt} />
-          </span>
-          <div className="card-main-content">
-            <h3>{heading}</h3>
-            <div className="text-container">
-              <p>{text}</p>
+  const renderedContent = whyCards.map(
+    ({ image, icon, heading, text }, index) => {
+      return (
+        <article className="card" key={index}>
+          {index % 2 !== 0 ? (
+            <div>
+              <div className="card-main-content">
+                <span className="icon-container">
+                  <span>
+                    <img src={icon.src} alt={icon.alt} />
+                  </span>
+                </span>
+                <h3>{heading}</h3>
+                <div className="text-container">
+                  <p>{text}</p>
+                </div>
+              </div>
+              <span className="image-container">
+                <img src={image.src} alt={image.alt} />
+              </span>
             </div>
-          </div>
-        </div>
-      </article>
-    );
-  });
+          ) : (
+            <div>
+              <span className="image-container">
+                <img src={image.src} alt={image.alt} />
+              </span>
+              <div className="card-main-content">
+                <span className="icon-container">
+                  <span>
+                    <img src={icon.src} alt={icon.alt} />
+                  </span>
+                </span>
+                <h3>{heading}</h3>
+                <div className="text-container">
+                  <p>{text}</p>
+                </div>
+              </div>
+            </div>
+          )}
+        </article>
+      );
+    }
+  );
   return (
     <div className="why-content">
       <h2>Why Choose Dynamic Driving</h2>

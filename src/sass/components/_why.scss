@@ -1,7 +1,7 @@
 .why-content {
   @include sectionContentHeading;
   @include sectionContentParagraph;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
 
   & > .main-content {
@@ -14,12 +14,25 @@
   grid-template-columns: 1fr;
   gap: 8rem 1rem;
   padding-bottom: 8rem;
+
+  @media screen and (min-width: 750px) {
+    gap: 5rem 1rem;
+    padding: 0 1rem;
+  }
+
+  @media screen and (min-width: 1000px) {
+    gap: 8rem 1rem;
+  }
 }
 
 .card {
   max-width: 400px;
   margin: 0 auto;
   border-radius: 5px;
+
+  @media screen and (min-width: 750px) {
+    max-width: none;
+  }
 
   // - Inner container
   & > div {
@@ -28,12 +41,34 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (min-width: 750px) {
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px) {
+      display: grid;
+      gap: 8rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
     & > .image-container {
       display: inline-block;
+      max-width: 700px;
       line-height: 0;
       font-size: 0;
+      border-radius: 5px;
+
       img {
         width: 100%;
+        border-radius: inherit;
+      }
+
+      @media screen and (min-width: 750px) {
+        box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
+        -webkit-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
+        -moz-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
       }
     }
 
@@ -47,6 +82,7 @@
         rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
       z-index: 1;
 
+      // - Card text background color ("faded")
       &::before {
         content: '';
         background-color: $white;
@@ -59,14 +95,70 @@
         z-index: -1;
       }
 
+      @media screen and (min-width: 750px) {
+        position: relative;
+        bottom: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0;
+        z-index: auto;
+        box-shadow: none;
+      }
+
+      // - Card icon (only displayed when vw 750px or higher.
+      .icon-container {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1.5rem;
+        border-radius: 50px;
+        background-color: $mainBlack;
+
+        @media screen and (min-width: 750px) {
+          display: flex;
+        }
+
+        @media screen and (min-width: 1000px) {
+          width: 70px;
+          height: 70px;
+        }
+
+        & > span {
+          display: inline-block;
+          width: 25px;
+          line-height: 0;
+          font-size: 0;
+
+          @media screen and (min-width: 1000px) {
+            width: 35px;
+            height: 35px;
+          }
+
+          & > img {
+            max-width: 100%;
+          }
+        }
+      }
+
       h3 {
         padding-bottom: 1rem;
         text-align: center;
+
+        @media screen and (min-width: 1000px) {
+          font-size: 25px;
+        }
       }
 
       .text-container {
         text-align: center;
         font-size: 14px;
+
+        @media screen and (min-width: 1000px) {
+          font-size: 16px;
+        }
       }
     }
   }
