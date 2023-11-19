@@ -2,9 +2,9 @@ import React from 'react';
 import instructorAndStudent from '../../images/driving-instructor-teaching-student.jpg';
 import driverWithKeys from '../../images/driving-student-holding-keys.jpeg';
 import calendarDayOff from '../../images/calendar-marked-with-day-off.jpeg';
-import instructorIcon from '../../images/instructor.png';
-import checklistIcon from '../../images/checklist.png';
-import calendarIcon from '../../images/calendar.png';
+import instructorIcon from '../../images/icons/instructor.png';
+import checklistIcon from '../../images/icons/checklist.png';
+import calendarIcon from '../../images/icons/calendar.png';
 
 const whyCards = [
   {

@@ -182,6 +182,7 @@ ul {
 }
 
 .services-content {
+  position: relative;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -199,11 +200,101 @@ ul {
 .services-content .main-content p:not(:nth-of-type(1)) {
   padding-top: 1rem;
 }
+.services-content h2 {
+  color: #ffffff;
+}
+.services-content > .main-content {
+  padding-top: 1rem;
+}
 
 .services-collection {
   display: grid;
-  gap: 10px 10px;
-  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 1000px) {
+  .services-collection {
+    gap: 2.5rem;
+  }
+}
+.services-collection .card {
+  position: relative;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+@media screen and (min-width: 1000px) {
+  .services-collection .card {
+    padding: 3rem 1rem;
+  }
+}
+.services-collection .card > div {
+  position: relative;
+}
+.services-collection .card > div > .card-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.services-collection .card > div > .card-main-content > .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 20%);
+}
+@media screen and (min-width: 1000px) {
+  .services-collection .card > div > .card-main-content > .icon-container {
+    width: 70px;
+    height: 70px;
+  }
+}
+.services-collection .card > div > .card-main-content > .icon-container > span {
+  display: inline-block;
+  width: 25px;
+  font-size: 0;
+  line-height: 0;
+}
+@media screen and (min-width: 1000px) {
+  .services-collection .card > div > .card-main-content > .icon-container > span {
+    width: 35px;
+    height: 35px;
+  }
+}
+.services-collection .card > div > .card-main-content > .icon-container > span > img {
+  width: 100%;
+}
+.services-collection .card > div > .card-main-content h3 {
+  font-size: 16px;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .services-collection .card > div > .card-main-content h3 {
+    font-size: 20px;
+  }
+}
+.services-collection .more-link-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-color: #ffffff;
+}
+.services-collection .more-link-container div > span {
+  display: inline-block;
+  font-size: 18px;
+}
+@media screen and (min-width: 1000px) {
+  .services-collection .more-link-container div > span {
+    font-size: 20px;
+  }
 }
 
 .why-content {
@@ -245,56 +336,55 @@ ul {
     gap: 8rem 1rem;
   }
 }
-
-.card {
+.why-collection .card {
   max-width: 400px;
   margin: 0 auto;
   border-radius: 5px;
 }
 @media screen and (min-width: 750px) {
-  .card {
+  .why-collection .card {
     max-width: none;
   }
 }
-.card > div {
+.why-collection .card > div {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (min-width: 750px) {
-  .card > div {
+  .why-collection .card > div {
     display: grid;
     gap: 5rem;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 1000px) {
-  .card > div {
+  .why-collection .card > div {
     display: grid;
     gap: 8rem;
     grid-template-columns: 1fr 1fr;
   }
 }
-.card > div > .image-container {
+.why-collection .card > div > .image-container {
   display: inline-block;
   max-width: 700px;
   line-height: 0;
   font-size: 0;
   border-radius: 5px;
 }
-.card > div > .image-container img {
+.why-collection .card > div > .image-container img {
   width: 100%;
   border-radius: inherit;
 }
 @media screen and (min-width: 750px) {
-  .card > div > .image-container {
+  .why-collection .card > div > .image-container {
     box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
     -webkit-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
     -moz-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
   }
 }
-.card > div > .card-main-content {
+.why-collection .card > div > .card-main-content {
   position: absolute;
   bottom: -115px;
   width: 90%;
@@ -303,7 +393,7 @@ ul {
   box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
   z-index: 1;
 }
-.card > div > .card-main-content::before {
+.why-collection .card > div > .card-main-content::before {
   content: "";
   background-color: #ffffff;
   opacity: 0.8;
@@ -315,7 +405,7 @@ ul {
   z-index: -1;
 }
 @media screen and (min-width: 750px) {
-  .card > div > .card-main-content {
+  .why-collection .card > div > .card-main-content {
     position: relative;
     bottom: auto;
     display: flex;
@@ -326,57 +416,57 @@ ul {
     box-shadow: none;
   }
 }
-.card > div > .card-main-content .icon-container {
+.why-collection .card > div > .card-main-content .icon-container {
   display: none;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
   margin-bottom: 1.5rem;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: hsl(0, 0%, 20%);
 }
 @media screen and (min-width: 750px) {
-  .card > div > .card-main-content .icon-container {
+  .why-collection .card > div > .card-main-content .icon-container {
     display: flex;
   }
 }
 @media screen and (min-width: 1000px) {
-  .card > div > .card-main-content .icon-container {
+  .why-collection .card > div > .card-main-content .icon-container {
     width: 70px;
     height: 70px;
   }
 }
-.card > div > .card-main-content .icon-container > span {
+.why-collection .card > div > .card-main-content .icon-container > span {
   display: inline-block;
   width: 25px;
   line-height: 0;
   font-size: 0;
 }
 @media screen and (min-width: 1000px) {
-  .card > div > .card-main-content .icon-container > span {
+  .why-collection .card > div > .card-main-content .icon-container > span {
     width: 35px;
     height: 35px;
   }
 }
-.card > div > .card-main-content .icon-container > span > img {
+.why-collection .card > div > .card-main-content .icon-container > span > img {
   max-width: 100%;
 }
-.card > div > .card-main-content h3 {
+.why-collection .card > div > .card-main-content h3 {
   padding-bottom: 1rem;
   text-align: center;
 }
 @media screen and (min-width: 1000px) {
-  .card > div > .card-main-content h3 {
+  .why-collection .card > div > .card-main-content h3 {
     font-size: 25px;
   }
 }
-.card > div > .card-main-content .text-container {
+.why-collection .card > div > .card-main-content .text-container {
   text-align: center;
   font-size: 14px;
 }
 @media screen and (min-width: 1000px) {
-  .card > div > .card-main-content .text-container {
+  .why-collection .card > div > .card-main-content .text-container {
     font-size: 16px;
   }
 }
@@ -527,5 +617,21 @@ section#why {
   background-color: #ffffff;
 }
 section#services {
+  position: relative;
   background-color: rgb(237, 238, 238);
+  background-image: url("../images/highway-aerial-view.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section#services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
 }/*# sourceMappingURL=main.css.map */

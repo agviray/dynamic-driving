@@ -23,141 +23,142 @@
   @media screen and (min-width: 1000px) {
     gap: 8rem 1rem;
   }
-}
 
-.card {
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 5px;
-
-  @media screen and (min-width: 750px) {
-    max-width: none;
-  }
-
-  // - Inner container
-  & > div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .card {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
 
     @media screen and (min-width: 750px) {
-      display: grid;
-      gap: 5rem;
-      grid-template-columns: 1fr 1fr;
+      max-width: none;
     }
 
-    @media screen and (min-width: 1000px) {
-      display: grid;
-      gap: 8rem;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    & > .image-container {
-      display: inline-block;
-      max-width: 700px;
-      line-height: 0;
-      font-size: 0;
-      border-radius: 5px;
-
-      img {
-        width: 100%;
-        border-radius: inherit;
-      }
+    // - Inner container
+    & > div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       @media screen and (min-width: 750px) {
-        box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-        -webkit-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-        -moz-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-      }
-    }
-
-    & > .card-main-content {
-      position: absolute;
-      bottom: -115px;
-      width: 90%;
-      margin: 0 auto;
-      padding: 1.75rem 1rem;
-      box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
-        rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
-      z-index: 1;
-
-      // - Card text background color ("faded")
-      &::before {
-        content: '';
-        background-color: $white;
-        opacity: 0.8;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: 1fr 1fr;
       }
 
-      @media screen and (min-width: 750px) {
-        position: relative;
-        bottom: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 0;
-        z-index: auto;
-        box-shadow: none;
+      @media screen and (min-width: 1000px) {
+        display: grid;
+        gap: 8rem;
+        grid-template-columns: 1fr 1fr;
       }
 
-      // - Card icon (only displayed when vw 750px or higher.
-      .icon-container {
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        margin-bottom: 1.5rem;
-        border-radius: 50px;
-        background-color: $mainBlack;
+      & > .image-container {
+        display: inline-block;
+        max-width: 700px;
+        line-height: 0;
+        font-size: 0;
+        border-radius: 5px;
+
+        img {
+          width: 100%;
+          border-radius: inherit;
+        }
 
         @media screen and (min-width: 750px) {
+          box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
+          -webkit-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
+          -moz-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
+        }
+      }
+
+      & > .card-main-content {
+        position: absolute;
+        bottom: -115px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.75rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+          rgba(0, 0, 0, 0.12) 0px 3px 1px -2px,
+          rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+        z-index: 1;
+
+        // - Card text background color ("faded")
+        &::before {
+          content: '';
+          background-color: $white;
+          opacity: 0.8;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+
+        @media screen and (min-width: 750px) {
+          position: relative;
+          bottom: auto;
           display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 0;
+          z-index: auto;
+          box-shadow: none;
         }
 
-        @media screen and (min-width: 1000px) {
-          width: 70px;
-          height: 70px;
-        }
+        // - Card icon (only displayed when vw 750px or higher.
+        .icon-container {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          margin-bottom: 1.5rem;
+          border-radius: 50%;
+          background-color: $mainBlack;
 
-        & > span {
-          display: inline-block;
-          width: 25px;
-          line-height: 0;
-          font-size: 0;
+          @media screen and (min-width: 750px) {
+            display: flex;
+          }
 
           @media screen and (min-width: 1000px) {
-            width: 35px;
-            height: 35px;
+            width: 70px;
+            height: 70px;
           }
 
-          & > img {
-            max-width: 100%;
+          & > span {
+            display: inline-block;
+            width: 25px;
+            line-height: 0;
+            font-size: 0;
+
+            @media screen and (min-width: 1000px) {
+              width: 35px;
+              height: 35px;
+            }
+
+            & > img {
+              max-width: 100%;
+            }
           }
         }
-      }
 
-      h3 {
-        padding-bottom: 1rem;
-        text-align: center;
+        h3 {
+          padding-bottom: 1rem;
+          text-align: center;
 
-        @media screen and (min-width: 1000px) {
-          font-size: 25px;
+          @media screen and (min-width: 1000px) {
+            font-size: 25px;
+          }
         }
-      }
 
-      .text-container {
-        text-align: center;
-        font-size: 14px;
+        .text-container {
+          text-align: center;
+          font-size: 14px;
 
-        @media screen and (min-width: 1000px) {
-          font-size: 16px;
+          @media screen and (min-width: 1000px) {
+            font-size: 16px;
+          }
         }
       }
     }
