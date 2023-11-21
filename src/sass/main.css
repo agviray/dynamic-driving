@@ -277,15 +277,31 @@ ul {
     font-size: 20px;
   }
 }
+.services-collection .more-link-container {
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.services-collection .more-link-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
 .services-collection .more-link-container div {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
-  background-color: #ffffff;
 }
 .services-collection .more-link-container div > span {
   display: inline-block;
@@ -295,6 +311,14 @@ ul {
   .services-collection .more-link-container div > span {
     font-size: 20px;
   }
+}
+.services-collection .more-link-container:hover::before {
+  background-color: rgb(229, 11, 14);
+  opacity: 1;
+  visibility: visible;
+}
+.services-collection .more-link-container:hover div > span {
+  color: #ffffff;
 }
 
 .why-content {
@@ -379,7 +403,7 @@ ul {
   position: absolute;
   top: 100%;
   width: 90%;
-  margin: -90px auto 0 auto;
+  margin: -80px auto 0 auto;
   padding: 1.75rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
   z-index: 1;
@@ -425,11 +449,6 @@ ul {
 .why-collection .card > div > .card-main-content .text-container {
   text-align: center;
   font-size: 14px;
-}
-@media screen and (min-width: 1000px) {
-  .why-collection .card > div > .card-main-content .text-container {
-    font-size: 16px;
-  }
 }
 
 nav {
