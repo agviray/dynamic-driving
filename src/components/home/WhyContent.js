@@ -56,41 +56,22 @@ const WhyContent = () => {
     ({ image, icon, heading, text }, index) => {
       return (
         <article className="card" key={index}>
-          {index % 2 !== 0 ? (
-            <div>
-              <div className="card-main-content">
-                <span className="icon-container">
-                  <span>
-                    <img src={icon.src} alt={icon.alt} />
-                  </span>
+          <div>
+            <span className="image-container">
+              <img src={image.src} alt={image.alt} />
+            </span>
+            <div className="card-main-content">
+              <span className="icon-container">
+                <span>
+                  <img src={icon.src} alt={icon.alt} />
                 </span>
-                <h3>{heading}</h3>
-                <div className="text-container">
-                  <p>{text}</p>
-                </div>
-              </div>
-              <span className="image-container">
-                <img src={image.src} alt={image.alt} />
               </span>
-            </div>
-          ) : (
-            <div>
-              <span className="image-container">
-                <img src={image.src} alt={image.alt} />
-              </span>
-              <div className="card-main-content">
-                <span className="icon-container">
-                  <span>
-                    <img src={icon.src} alt={icon.alt} />
-                  </span>
-                </span>
-                <h3>{heading}</h3>
-                <div className="text-container">
-                  <p>{text}</p>
-                </div>
+              <h3>{heading}</h3>
+              <div className="text-container">
+                <p>{text}</p>
               </div>
             </div>
-          )}
+          </div>
         </article>
       );
     }

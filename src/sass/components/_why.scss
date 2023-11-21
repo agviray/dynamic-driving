@@ -1,7 +1,7 @@
 .why-content {
   @include sectionContentHeading;
   @include sectionContentParagraph;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
 
   & > .main-content {
@@ -12,16 +12,20 @@
 .why-collection {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8rem 1rem;
+  gap: 7rem 1rem;
   padding-bottom: 8rem;
 
-  @media screen and (min-width: 750px) {
-    gap: 5rem 1rem;
-    padding: 0 1rem;
+  @media screen and (min-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 2rem;
   }
 
   @media screen and (min-width: 1000px) {
-    gap: 8rem 1rem;
+    padding-bottom: 9rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 0 4rem;
   }
 
   .card {
@@ -29,28 +33,16 @@
     margin: 0 auto;
     border-radius: 5px;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 1000px) {
       max-width: none;
     }
 
-    // - Inner container
+    // - .card Inner container
     & > div {
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      @media screen and (min-width: 750px) {
-        display: grid;
-        gap: 5rem;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      @media screen and (min-width: 1000px) {
-        display: grid;
-        gap: 8rem;
-        grid-template-columns: 1fr 1fr;
-      }
 
       & > .image-container {
         display: inline-block;
@@ -73,37 +65,29 @@
 
       & > .card-main-content {
         position: absolute;
-        bottom: -115px;
+        top: 100%;
         width: 90%;
-        margin: 0 auto;
+        margin: -90px auto 0 auto;
         padding: 1.75rem 1rem;
         box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
           rgba(0, 0, 0, 0.12) 0px 3px 1px -2px,
           rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
         z-index: 1;
 
+        @media screen and (min-width: 1000px) {
+          padding: 2rem 1.5rem;
+        }
+
         // - Card text background color ("faded")
         &::before {
           content: '';
           background-color: $white;
-          opacity: 0.8;
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
           z-index: -1;
-        }
-
-        @media screen and (min-width: 750px) {
-          position: relative;
-          bottom: auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin: 0 0;
-          z-index: auto;
-          box-shadow: none;
         }
 
         // - Card icon (only displayed when vw 750px or higher.
@@ -117,25 +101,11 @@
           border-radius: 50%;
           background-color: $mainBlack;
 
-          @media screen and (min-width: 750px) {
-            display: flex;
-          }
-
-          @media screen and (min-width: 1000px) {
-            width: 70px;
-            height: 70px;
-          }
-
           & > span {
             display: inline-block;
             width: 25px;
             line-height: 0;
             font-size: 0;
-
-            @media screen and (min-width: 1000px) {
-              width: 35px;
-              height: 35px;
-            }
 
             & > img {
               max-width: 100%;
@@ -146,10 +116,6 @@
         h3 {
           padding-bottom: 1rem;
           text-align: center;
-
-          @media screen and (min-width: 1000px) {
-            font-size: 25px;
-          }
         }
 
         .text-container {
