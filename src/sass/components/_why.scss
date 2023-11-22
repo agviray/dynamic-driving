@@ -1,7 +1,7 @@
 .why-content {
   @include sectionContentHeading;
   @include sectionContentParagraph;
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
 
   & > .main-content {
@@ -15,17 +15,19 @@
   gap: 7rem 1rem;
   padding-bottom: 8rem;
 
-  @media screen and (min-width: 960px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0 2rem;
+  @media screen and (min-width: 950px) {
+    gap: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    box-shadow: -1px 10px 18px 1px rgba(51, 51, 51, 0.64);
+    -webkit-box-shadow: -1px 10px 18px 1px rgba(51, 51, 51, 0.64);
+    -moz-box-shadow: -1px 10px 18px 1px rgba(51, 51, 51, 0.64);
   }
 
   @media screen and (min-width: 1000px) {
-    padding-bottom: 9rem;
-  }
-
-  @media screen and (min-width: 1200px) {
-    gap: 0 4rem;
+    // max-width: 875px;
+    max-width: 900px;
   }
 
   .card {
@@ -33,7 +35,7 @@
     margin: 0 auto;
     border-radius: 5px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 950px) {
       max-width: none;
     }
 
@@ -44,6 +46,11 @@
       flex-direction: column;
       align-items: center;
 
+      @media screen and (min-width: 950px) {
+        flex-direction: row;
+        align-items: normal;
+      }
+
       & > .image-container {
         display: inline-block;
         max-width: 700px;
@@ -51,15 +58,14 @@
         font-size: 0;
         border-radius: 5px;
 
+        @media screen and (min-width: 950px) {
+          min-width: 50%;
+          border-radius: 0;
+        }
+
         img {
           width: 100%;
           border-radius: inherit;
-        }
-
-        @media screen and (min-width: 750px) {
-          box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-          -webkit-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-          -moz-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
         }
       }
 
@@ -68,29 +74,32 @@
         top: 100%;
         width: 90%;
         margin: -80px auto 0 auto;
-        padding: 1.75rem 1rem;
+        padding: 1.25rem;
+        background-color: $white;
         box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
           rgba(0, 0, 0, 0.12) 0px 3px 1px -2px,
           rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
         z-index: 1;
 
+        @media screen and (min-width: 950px) {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          margin: 0;
+          box-shadow: none;
+        }
+
         @media screen and (min-width: 1000px) {
-          padding: 2rem 1.5rem;
+          padding: 0 3rem;
         }
 
-        // - Card text background color ("faded")
-        &::before {
-          content: '';
-          background-color: $white;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-        }
-
-        // - Card icon (only displayed when vw 750px or higher.
+        // ***********************
+        // Optional icon display
+        // ***********************
+        // - Card icon (only displayed when vw 950px or higher.
         .icon-container {
           display: none;
           justify-content: center;
@@ -101,11 +110,26 @@
           border-radius: 50%;
           background-color: $mainBlack;
 
+          // - Optional icon display
+          @media screen and (min-width: 950px) {
+            // display: flex;
+          }
+
+          @media screen and (min-width: 1000px) {
+            width: 70px;
+            height: 70px;
+          }
+
           & > span {
             display: inline-block;
             width: 25px;
             line-height: 0;
             font-size: 0;
+
+            @media screen and (min-width: 1000px) {
+              width: 35px;
+              height: 35px;
+            }
 
             & > img {
               max-width: 100%;
@@ -113,14 +137,21 @@
           }
         }
 
-        h3 {
-          padding-bottom: 1rem;
+        h3,
+        .text-container {
           text-align: center;
         }
 
+        h3 {
+          padding-bottom: 1rem;
+        }
+
         .text-container {
-          text-align: center;
           font-size: 14px;
+
+          @media screen and (min-width: 950px) {
+            font-size: 16px;
+          }
         }
       }
     }
