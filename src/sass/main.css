@@ -347,17 +347,17 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   gap: 7rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
   padding-bottom: 8rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 950px) {
   .why-collection {
+    max-width: none;
+    margin: 0;
+    padding: 0 1rem 14rem 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0 2rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .why-collection {
-    padding-bottom: 9rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -366,11 +366,11 @@ ul {
   }
 }
 .why-collection .card {
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 auto;
   border-radius: 5px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 950px) {
   .why-collection .card {
     max-width: none;
   }
@@ -392,7 +392,7 @@ ul {
   width: 100%;
   border-radius: inherit;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   .why-collection .card > div > .image-container {
     box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
     -webkit-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
@@ -402,26 +402,29 @@ ul {
 .why-collection .card > div > .card-main-content {
   position: absolute;
   top: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   margin: -80px auto 0 auto;
-  padding: 1.75rem 1rem;
+  padding: 1.75rem;
+  background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
   z-index: 1;
+  border-radius: 3px;
+}
+@media screen and (min-width: 950px) {
+  .why-collection .card > div > .card-main-content {
+    width: 90%;
+    min-height: 294px;
+    margin-top: -50px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .why-collection .card > div > .card-main-content {
     padding: 2rem 1.5rem;
   }
-}
-.why-collection .card > div > .card-main-content::before {
-  content: "";
-  background-color: #ffffff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 .why-collection .card > div > .card-main-content .icon-container {
   display: none;
@@ -433,11 +436,23 @@ ul {
   border-radius: 50%;
   background-color: hsl(0, 0%, 20%);
 }
+@media screen and (min-width: 1000px) {
+  .why-collection .card > div > .card-main-content .icon-container {
+    width: 70px;
+    height: 70px;
+  }
+}
 .why-collection .card > div > .card-main-content .icon-container > span {
   display: inline-block;
   width: 25px;
   line-height: 0;
   font-size: 0;
+}
+@media screen and (min-width: 1000px) {
+  .why-collection .card > div > .card-main-content .icon-container > span {
+    width: 35px;
+    height: 35px;
+  }
 }
 .why-collection .card > div > .card-main-content .icon-container > span > img {
   max-width: 100%;
@@ -445,10 +460,16 @@ ul {
 .why-collection .card > div > .card-main-content h3 {
   padding-bottom: 1rem;
   text-align: center;
+  font-size: 18px;
 }
 .why-collection .card > div > .card-main-content .text-container {
   text-align: center;
   font-size: 14px;
+}
+@media screen and (min-width: 950px) {
+  .why-collection .card > div > .card-main-content .text-container {
+    font-size: 15px;
+  }
 }
 
 nav {
@@ -594,7 +615,7 @@ section#about {
   background-color: #ffffff;
 }
 section#why {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 section#services {
   position: relative;

@@ -17,7 +17,7 @@ const whyCards = [
       alt: 'Instructor icon',
     },
     heading: 'Experienced Instructors',
-    text: `Our team of certified and experienced instructors brings a
+    text: `Our certified and experienced instructors bring a
     wealth of knowledge and expertise to every lesson, ensuring
     you receive the highest quality instruction.`,
   },
@@ -45,8 +45,7 @@ const whyCards = [
       alt: 'Calendar icon',
     },
     heading: 'Flexible Scheduling',
-    text: `Life can be busy, and we understand that. That's why we offer
-    flexible scheduling options to accommodate your commitments
+    text: `Life can be busy, and we understand that. We offer flexible scheduling options to accommodate your commitments
     and make it convenient for you to learn at your own pace.`,
   },
 ];
