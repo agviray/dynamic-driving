@@ -57,10 +57,10 @@ const ServicesContent = () => {
           {renderedContent}
           <article className="more-link-container">
             <Link to="/services">
-              <div>
+              <h3>
                 <span>View All</span>
                 <span>Services</span>
-              </div>
+              </h3>
             </Link>
           </article>
         </div>
