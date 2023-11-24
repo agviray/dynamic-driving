@@ -1,3 +1,7 @@
+@mixin parentElement {
+  padding: calc($headerHeight + 20px) 15px;
+}
+
 @mixin sectionContentHeading {
   h2 {
     font-size: 24px;

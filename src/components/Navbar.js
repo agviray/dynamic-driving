@@ -12,7 +12,7 @@ const navlinks = [
   },
   {
     linkName: 'Services',
-    href: '#services',
+    href: '/services',
   },
   {
     linkName: 'Reviews',

@@ -1,6 +1,8 @@
 section {
-  &:not(#hero) {
-    padding: calc($headerHeight + 20px) 15px;
+  &#about,
+  &#why,
+  &#services {
+    @include parentElement;
   }
 
   &#about {

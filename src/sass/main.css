@@ -613,7 +613,13 @@ nav > div .nav-menu ul li span:hover {
   }
 }
 
-section:not(#hero) {
+.page-template {
+  padding: 76px 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section#about, section#why, section#services {
   padding: 76px 15px;
 }
 section#about {
