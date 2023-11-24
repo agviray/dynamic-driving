@@ -2,7 +2,7 @@ import React from 'react';
 import characters from '../../images/characters.png';
 import BookButton from '../BookButton';
 
-const HeroContent = () => {
+const HeroSection = () => {
   return (
     <div className="hero-content">
       <h1>
@@ -21,4 +21,4 @@ const HeroContent = () => {
   );
 };
 
-export default HeroContent;
+export default HeroSection;

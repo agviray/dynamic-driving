@@ -31,7 +31,7 @@ const servicesCards = [
   },
 ];
 
-const ServicesContent = () => {
+const ServicesSection = () => {
   const renderedContent = servicesCards.map(({ icon, heading }, index) => {
     return (
       <article className="card" key={index}>
@@ -69,4 +69,4 @@ const ServicesContent = () => {
   );
 };
 
-export default ServicesContent;
+export default ServicesSection;

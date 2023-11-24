@@ -1,20 +1,20 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import HeroContent from '../components/home/HeroContent';
-import WhyContent from '../components/home/WhyContent';
-import ServicesContent from '../components/home/ServicesContent';
+import HeroSection from '../components/home/HeroSection';
+import WhySection from '../components/home/WhySection';
+import ServicesSection from '../components/home/ServicesSection';
 
 const Home = () => {
   return (
     <Layout>
       <section id="hero">
-        <HeroContent />
+        <HeroSection />
       </section>
       <section id="why">
-        <WhyContent />
+        <WhySection />
       </section>
       <section id="services">
-        <ServicesContent />
+        <ServicesSection />
       </section>
     </Layout>
   );

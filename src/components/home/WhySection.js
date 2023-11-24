@@ -50,7 +50,7 @@ const whyCards = [
   },
 ];
 
-const WhyContent = () => {
+const WhySection = () => {
   const renderedContent = whyCards.map(
     ({ image, icon, heading, text }, index) => {
       return (
@@ -85,4 +85,4 @@ const WhyContent = () => {
   );
 };
 
-export default WhyContent;
+export default WhySection;

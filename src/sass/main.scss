@@ -5,14 +5,14 @@
 @import './base/reset';
 @import './base/typography';
 
-@import './components/about';
+@import './components/aboutSection';
 @import './components/bookButton';
-@import './components/hero';
-@import './components/services';
-@import './components/why';
+@import './components/heroSection';
+@import './components/servicesSection';
+@import './components/whySection';
 
 @import './layout/navigation';
 @import './layout/pageTemplate';
 
 @import './pages/home';
-@import './pages/servicesPage';
+@import './pages/services';
