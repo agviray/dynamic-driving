@@ -211,6 +211,7 @@ ul {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(185px, 100%));
 }
 @media screen and (min-width: 1000px) {
   .services-collection {
@@ -219,7 +220,7 @@ ul {
 }
 .services-collection .card {
   position: relative;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   background-color: #ffffff;
   border-radius: 5px;
 }
@@ -281,6 +282,9 @@ ul {
   .services-collection .card > div > .card-main-content h3 {
     font-size: 20px;
   }
+}
+.services-collection > article h3 {
+  padding: 0 1rem;
 }
 .services-collection .more-link-container {
   position: relative;
@@ -613,10 +617,21 @@ nav > div .nav-menu ul li span:hover {
   }
 }
 
-.page-template {
+.page-template .main-content {
   padding: 76px 15px;
   max-width: 1000px;
   margin: 0 auto;
+}
+.page-template .main-content h2 {
+  font-size: 24px;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+@media screen and (min-width: 750px) {
+  .page-template .main-content h2 {
+    font-size: 30px;
+    padding-bottom: 2.5rem;
+  }
 }
 
 section#about, section#why, section#services {
@@ -646,4 +661,113 @@ section#services::before {
   width: 100%;
   height: 100%;
   background-color: rgba(51, 51, 51, 0.5);
+}
+
+.services-hero {
+  position: relative;
+  min-height: 400px;
+  padding-top: 56px;
+  background-color: rgb(237, 238, 238);
+  background-image: url("../images/highway-aerial-view.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (min-width: 1000px) {
+  .services-hero {
+    height: 500px;
+  }
+}
+.services-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.services-cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+@media screen and (min-width: 950px) {
+  .services-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    max-width: none;
+    padding: 1rem;
+  }
+}
+.services-cards .card {
+  position: relative;
+  padding: 2rem 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+@media screen and (min-width: 1000px) {
+  .services-cards .card {
+    padding: 3rem 1rem;
+  }
+}
+.services-cards .card > div {
+  position: relative;
+}
+.services-cards .card > div > .card-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 950px) {
+  .services-cards .card > div > .card-main-content {
+    gap: 1.5rem;
+  }
+}
+.services-cards .card > div > .card-main-content > .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 20%);
+}
+@media screen and (min-width: 1000px) {
+  .services-cards .card > div > .card-main-content > .icon-container {
+    width: 70px;
+    height: 70px;
+  }
+}
+.services-cards .card > div > .card-main-content > .icon-container > span {
+  display: inline-block;
+  width: 25px;
+  font-size: 0;
+  line-height: 0;
+}
+@media screen and (min-width: 1000px) {
+  .services-cards .card > div > .card-main-content > .icon-container > span {
+    width: 35px;
+    height: 35px;
+  }
+}
+.services-cards .card > div > .card-main-content > .icon-container > span > img {
+  width: 100%;
+}
+.services-cards .card > div > .card-main-content h3 {
+  font-size: 16px;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .services-cards .card > div > .card-main-content h3 {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

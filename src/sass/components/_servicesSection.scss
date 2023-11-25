@@ -19,75 +19,16 @@
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(185px, 100%));
 
   @media screen and (min-width: 1000px) {
     gap: 2.5rem;
   }
 
-  .card {
-    position: relative;
-    padding: 2rem 1rem;
-    background-color: $white;
-    border-radius: 5px;
-
-    @media screen and (min-width: 1000px) {
-      padding: 3rem 1rem;
-    }
-
-    & > div {
-      position: relative;
-
-      & > .card-main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-
-        @media screen and (min-width: 950px) {
-          gap: 1.5rem;
-        }
-        & > .icon-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background-color: $mainBlack;
-
-          @media screen and (min-width: 1000px) {
-            width: 70px;
-            height: 70px;
-          }
-
-          & > span {
-            display: inline-block;
-            width: 25px;
-            font-size: 0;
-            line-height: 0;
-
-            @media screen and (min-width: 1000px) {
-              width: 35px;
-              height: 35px;
-            }
-
-            & > img {
-              width: 100%;
-            }
-          }
-        }
-
-        h3 {
-          font-size: 16px;
-          text-align: center;
-
-          @media screen and (min-width: 1000px) {
-            font-size: 20px;
-          }
-        }
-      }
-    }
+  // - Styles for immediate children (the cards)
+  @include cardWithIcon;
+  & > article h3 {
+    padding: 0 1rem;
   }
 
   // - Link to services page

@@ -1,5 +1,9 @@
 .page-template {
-  @include parentElement;
-  max-width: 1000px;
-  margin: 0 auto;
+  .main-content {
+    @include parentElement;
+    @include sectionContentHeading;
+
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }

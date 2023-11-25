@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import driversEduIcon from '../../images/icons/driver-sitting-in-driving-seat.png';
+import driversEduIcon from '../../images/icons/instructor.png';
 import steeringWheelIcon from '../../images/icons/steering-wheel.png';
 import drivingTestIcon from '../../images/icons/driving-test.png';
 
@@ -8,7 +8,7 @@ const servicesCards = [
   {
     icon: {
       src: driversEduIcon,
-      alt: `Driver sitting icon`,
+      alt: `Instructor teaching`,
     },
     heading: `Driver's Education Courses`,
     text: ``,
