@@ -253,38 +253,29 @@ ul {
   border-radius: 50%;
   background-color: hsl(0, 0%, 20%);
 }
-@media screen and (min-width: 1000px) {
-  .services-collection .card > div > .card-main-content > .icon-container {
-    width: 70px;
-    height: 70px;
-  }
-}
 .services-collection .card > div > .card-main-content > .icon-container > span {
   display: inline-block;
-  width: 25px;
+  width: 27px;
   font-size: 0;
   line-height: 0;
-}
-@media screen and (min-width: 1000px) {
-  .services-collection .card > div > .card-main-content > .icon-container > span {
-    width: 35px;
-    height: 35px;
-  }
 }
 .services-collection .card > div > .card-main-content > .icon-container > span > img {
   width: 100%;
 }
 .services-collection .card > div > .card-main-content h3 {
-  font-size: 16px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
 }
 @media screen and (min-width: 1000px) {
   .services-collection .card > div > .card-main-content h3 {
     font-size: 20px;
   }
 }
-.services-collection > article h3 {
-  padding: 0 1rem;
+.services-collection .card > div > .card-main-content h3 > span {
+  display: inline-block;
+  text-align: center;
 }
 .services-collection .more-link-container {
   position: relative;
@@ -314,7 +305,7 @@ ul {
 }
 .services-collection .more-link-container h3 > span {
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
 }
 @media screen and (min-width: 1000px) {
   .services-collection .more-link-container h3 > span {
@@ -417,7 +408,7 @@ ul {
   align-items: center;
   width: 90%;
   margin: -80px auto 0 auto;
-  padding: 1.75rem;
+  padding: 1.75rem 1.25rem;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
   z-index: 1;
@@ -692,7 +683,7 @@ section#services::before {
 
 .services-cards {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
   max-width: 600px;
   margin: 0 auto;
@@ -741,33 +732,30 @@ section#services::before {
   border-radius: 50%;
   background-color: hsl(0, 0%, 20%);
 }
-@media screen and (min-width: 1000px) {
-  .services-cards .card > div > .card-main-content > .icon-container {
-    width: 70px;
-    height: 70px;
-  }
-}
 .services-cards .card > div > .card-main-content > .icon-container > span {
   display: inline-block;
-  width: 25px;
+  width: 27px;
   font-size: 0;
   line-height: 0;
-}
-@media screen and (min-width: 1000px) {
-  .services-cards .card > div > .card-main-content > .icon-container > span {
-    width: 35px;
-    height: 35px;
-  }
 }
 .services-cards .card > div > .card-main-content > .icon-container > span > img {
   width: 100%;
 }
 .services-cards .card > div > .card-main-content h3 {
-  font-size: 16px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
 }
 @media screen and (min-width: 1000px) {
   .services-cards .card > div > .card-main-content h3 {
     font-size: 20px;
   }
+}
+.services-cards .card > div > .card-main-content h3 > span {
+  display: inline-block;
+  text-align: center;
+}
+.services-cards .card {
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
 }/*# sourceMappingURL=main.css.map */

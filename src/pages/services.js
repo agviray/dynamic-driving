@@ -14,7 +14,7 @@ const servicesCards = [
       src: driversEduIcon,
       alt: `Instructor teaching`,
     },
-    heading: `Driver's Education Courses`,
+    heading: [`Driver's Education`, `Courses`],
     text: ``,
   },
   {
@@ -22,7 +22,7 @@ const servicesCards = [
       src: behindWheelIcon,
       alt: `Steering wheel icon`,
     },
-    heading: `Behind-the-Weel Training`,
+    heading: [`Behind-the-Weel`, `Training`],
     text: ``,
   },
   {
@@ -30,7 +30,7 @@ const servicesCards = [
       src: drivingTestIcon,
       alt: `Paper and pencil icon`,
     },
-    heading: `Driver's License Test Preparation`,
+    heading: [`Driver's License`, `Test Preparation`],
     text: ``,
   },
   {
@@ -38,7 +38,7 @@ const servicesCards = [
       src: defensiveDrivingIcon,
       alt: `Traffic light and car`,
     },
-    heading: `Defensive Driving Courses`,
+    heading: [`Defensive Driving`, `Courses`],
     text: ``,
   },
   {
@@ -46,7 +46,7 @@ const servicesCards = [
       src: privateLessonsIcon,
       alt: `Driver sitting in driver's seat`,
     },
-    heading: `Private Lessons`,
+    heading: [`Private`, `Lessons`],
     text: ``,
   },
   {
@@ -54,7 +54,7 @@ const servicesCards = [
       src: customProgramIcon,
       alt: `Smiley face`,
     },
-    heading: `Specialized/Custom Training Programs`,
+    heading: [`Specialized/Custom`, `Training Programs`],
     text: ``,
   },
 ];
@@ -70,7 +70,11 @@ const Services = () => {
                 <img src={icon.src} alt={icon.alt} />
               </span>
             </span>
-            <h3>{heading}</h3>
+            <h3>
+              {heading.map((text, index) => (
+                <span key={index}>{text}</span>
+              ))}
+            </h3>
           </div>
         </div>
       </article>

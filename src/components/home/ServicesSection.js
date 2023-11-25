@@ -10,7 +10,7 @@ const servicesCards = [
       src: driversEduIcon,
       alt: `Instructor teaching`,
     },
-    heading: `Driver's Education Courses`,
+    heading: [`Driver's Education`, `Courses`],
     text: ``,
   },
   {
@@ -18,7 +18,7 @@ const servicesCards = [
       src: steeringWheelIcon,
       alt: `Steering wheel icon`,
     },
-    heading: `Behind-the-Weel Training`,
+    heading: [`Behind-the-Wheel`, `Training`],
     text: ``,
   },
   {
@@ -26,7 +26,7 @@ const servicesCards = [
       src: drivingTestIcon,
       alt: `Paper and pencil icon`,
     },
-    heading: `Driver's License Test Preparation`,
+    heading: [`Driver's License`, `Test Preparation`],
     text: ``,
   },
 ];
@@ -42,7 +42,11 @@ const ServicesSection = () => {
                 <img src={icon.src} alt={icon.alt} />
               </span>
             </span>
-            <h3>{heading}</h3>
+            <h3>
+              {heading.map((text, index) => (
+                <span key={index}>{text}</span>
+              ))}
+            </h3>
           </div>
         </div>
       </article>
