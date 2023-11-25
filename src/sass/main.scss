@@ -5,7 +5,6 @@
 @import './base/reset';
 @import './base/typography';
 
-@import './components/aboutSection';
 @import './components/bookButton';
 @import './components/heroSection';
 @import './components/servicesSection';
@@ -14,5 +13,6 @@
 @import './layout/navigation';
 @import './layout/pageTemplate';
 
+@import './pages/about';
 @import './pages/home';
 @import './pages/services';
