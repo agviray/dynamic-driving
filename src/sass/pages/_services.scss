@@ -1,6 +1,8 @@
 .services-hero {
   position: relative;
-  min-height: 400px;
+  height: 30vh;
+  min-height: 250px;
+  max-height: 400px;
   margin-top: $headerHeight;
   background-color: $lightGray;
   background-image: url('../images/highway-aerial-view.jpg');
@@ -9,7 +11,9 @@
   background-size: cover;
 
   @media screen and (min-width: 1000px) {
-    height: 500px;
+    height: 40vh;
+    min-height: 300px;
+    max-height: 500px;
   }
   // - Background image overlay (dark tint)
   &::before {

@@ -84,11 +84,12 @@ const Services = () => {
     <Layout>
       <PageTemplate>
         <section>
-          <div className="services-hero"></div>
+          <div className="services-hero page-heading-content">
+            <h2>Services</h2>
+          </div>
         </section>
         <section>
           <div className="main-content">
-            <h2>Services</h2>
             <div className="services-cards">{renderedContent}</div>
           </div>
         </section>

@@ -1,7 +1,22 @@
 .page-template {
+  .page-heading-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > h2 {
+      position: relative;
+      color: $white;
+      display: inline-block;
+      font-size: 24px;
+
+      @media screen and (min-width: 750px) {
+        font-size: 30px;
+      }
+    }
+  }
   .main-content {
     @include parentElement;
-    @include sectionContentHeading;
 
     max-width: 1000px;
     margin: 0 auto;

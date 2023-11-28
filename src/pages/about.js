@@ -7,11 +7,12 @@ const About = () => {
     <Layout>
       <PageTemplate>
         <section>
-          <div className="about-hero"></div>
+          <div className="about-hero page-heading-content">
+            <h2>About</h2>
+          </div>
         </section>
         <section>
           <div className="main-content">
-            <h2>About</h2>
             <blockquote>
               <p>Learn the right skills and</p>
               <p>drive safely with confidence</p>

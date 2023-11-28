@@ -579,26 +579,33 @@ nav > div .nav-menu ul li span:hover {
   }
 }
 
+.page-template .page-heading-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-template .page-heading-content > h2 {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+}
+@media screen and (min-width: 750px) {
+  .page-template .page-heading-content > h2 {
+    font-size: 30px;
+  }
+}
 .page-template .main-content {
   padding: 76px 15px;
   max-width: 1000px;
   margin: 0 auto;
 }
-.page-template .main-content h2 {
-  font-size: 24px;
-  padding-bottom: 1.25rem;
-  text-align: center;
-}
-@media screen and (min-width: 750px) {
-  .page-template .main-content h2 {
-    font-size: 30px;
-    padding-bottom: 2.5rem;
-  }
-}
 
 .about-hero {
   position: relative;
-  min-height: 400px;
+  height: 30vh;
+  min-height: 250px;
+  max-height: 400px;
   margin-top: 56px;
   background-color: rgb(237, 238, 238);
   background-image: url("../images/peaceful-straight-road-03.jpg");
@@ -608,7 +615,9 @@ nav > div .nav-menu ul li span:hover {
 }
 @media screen and (min-width: 1000px) {
   .about-hero {
-    height: 500px;
+    height: 40vh;
+    min-height: 300px;
+    max-height: 500px;
   }
 }
 .about-hero::before {
@@ -665,7 +674,9 @@ section#services::before {
 
 .services-hero {
   position: relative;
-  min-height: 400px;
+  height: 30vh;
+  min-height: 250px;
+  max-height: 400px;
   margin-top: 56px;
   background-color: rgb(237, 238, 238);
   background-image: url("../images/highway-aerial-view.jpg");
@@ -675,7 +686,9 @@ section#services::before {
 }
 @media screen and (min-width: 1000px) {
   .services-hero {
-    height: 500px;
+    height: 40vh;
+    min-height: 300px;
+    max-height: 500px;
   }
 }
 .services-hero::before {
