@@ -5,6 +5,10 @@ section {
     @include parentElement;
   }
 
+  &#hero {
+    padding-top: $headerHeight;
+  }
+
   &#about {
     background-color: $white;
   }
