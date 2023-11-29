@@ -2,6 +2,7 @@ import React from 'react';
 import '../sass/main.scss';
 // - Components
 import Navbar from './Navbar';
+import FooterContent from './FooterContent';
 
 const Layout = ({ children }) => {
   return (
@@ -11,8 +12,7 @@ const Layout = ({ children }) => {
       </header>
       <main>{children}</main>
       <footer>
-        <h2>Footer Content</h2>
-        <p>The footer content will go here.</p>
+        <FooterContent />
       </footer>
     </>
   );
