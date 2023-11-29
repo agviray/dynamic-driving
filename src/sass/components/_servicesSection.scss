@@ -1,7 +1,6 @@
 // - Styles for Services section on Home Page
 .services-content {
   @include sectionContentHeading;
-  @include sectionContentParagraph;
   position: relative;
   max-width: 1000px;
   margin: 0 auto;

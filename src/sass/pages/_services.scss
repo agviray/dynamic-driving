@@ -35,7 +35,8 @@
   grid-template-columns: 1fr 1fr;
   max-width: 600px;
   margin: 0 auto;
-  padding: 1rem 0;
+  // padding: 2rem 0;
+  padding-top: $headerHeight;
 
   @media screen and (min-width: 950px) {
     grid-template-columns: 1fr 1fr 1fr;

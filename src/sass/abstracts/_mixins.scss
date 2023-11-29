@@ -1,5 +1,5 @@
 @mixin parentElement {
-  padding: calc($headerHeight + 20px) 15px;
+  padding: $headerHeight 15px;
 }
 
 @mixin sectionContentHeading {
@@ -15,8 +15,8 @@
   }
 }
 
-@mixin sectionContentParagraph {
-  .main-content {
+@mixin paragraphGroup {
+  .paragraph-group {
     p {
       &:not(:nth-of-type(1)) {
         padding-top: 1rem;

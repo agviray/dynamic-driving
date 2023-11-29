@@ -168,9 +168,6 @@ ul {
     padding-bottom: 2.5rem;
   }
 }
-.services-content .main-content p:not(:nth-of-type(1)) {
-  padding-top: 1rem;
-}
 .services-content h2 {
   color: #ffffff;
 }
@@ -306,9 +303,6 @@ ul {
     font-size: 30px;
     padding-bottom: 2.5rem;
   }
-}
-.why-content .main-content p:not(:nth-of-type(1)) {
-  padding-top: 1rem;
 }
 .why-content > .main-content {
   padding-top: 1rem;
@@ -596,9 +590,12 @@ nav > div .nav-menu ul li span:hover {
   }
 }
 .page-template .main-content {
-  padding: 76px 15px;
+  padding: 56px 15px;
   max-width: 1000px;
   margin: 0 auto;
+}
+.page-template .main-content .paragraph-group p:not(:nth-of-type(1)) {
+  padding-top: 1rem;
 }
 
 .about-hero {
@@ -644,7 +641,7 @@ nav > div .nav-menu ul li span:hover {
 }
 
 section#about, section#why, section#services {
-  padding: 76px 15px;
+  padding: 56px 15px;
 }
 section#about {
   background-color: #ffffff;
@@ -709,7 +706,7 @@ section#services::before {
   grid-template-columns: 1fr 1fr;
   max-width: 600px;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding-top: 56px;
 }
 @media screen and (min-width: 950px) {
   .services-cards {

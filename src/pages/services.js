@@ -90,6 +90,14 @@ const Services = () => {
         </section>
         <section>
           <div className="main-content">
+            <div className="paragraph-group">
+              <p>
+                We cater to a diverse range of learners, ensuring that each
+                student receives the proper training needed to safely navigate
+                the complexities of the road.
+              </p>
+              <p>Our services include but are not limited to:</p>
+            </div>
             <div className="services-cards">{renderedContent}</div>
           </div>
         </section>

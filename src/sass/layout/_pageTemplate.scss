@@ -16,6 +16,7 @@
     }
   }
   .main-content {
+    @include paragraphGroup;
     @include parentElement;
 
     max-width: 1000px;

@@ -1,7 +1,6 @@
 // - Styles for Why section on Home Page
 .why-content {
   @include sectionContentHeading;
-  @include sectionContentParagraph;
   max-width: 1400px;
   margin: 0 auto;
 
