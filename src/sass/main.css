@@ -574,19 +574,47 @@ nav > div .nav-menu ul li span:hover {
 }
 
 .page-template .page-heading-content {
+  position: relative;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1.5rem;
 }
 .page-template .page-heading-content > h2 {
-  position: relative;
   color: #ffffff;
   display: inline-block;
   font-size: 24px;
+  padding-bottom: 1.25rem;
 }
 @media screen and (min-width: 750px) {
   .page-template .page-heading-content > h2 {
     font-size: 30px;
+  }
+}
+.page-template .page-heading-content > .description {
+  max-width: 550px;
+  text-align: center;
+}
+@media screen and (min-width: 950px) {
+  .page-template .page-heading-content > .description {
+    max-width: 700px;
+  }
+}
+.page-template .page-heading-content > .description p {
+  color: #ffffff;
+}
+@media screen and (min-width: 750px) {
+  .page-template .page-heading-content > .description p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .page-template .page-heading-content > .description p {
+    font-size: 20px;
   }
 }
 .page-template .main-content {
@@ -697,7 +725,7 @@ section#services::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(51, 51, 51, 0.5);
+  background-color: rgba(51, 51, 51, 0.7);
 }
 
 .services-cards {
@@ -706,7 +734,6 @@ section#services::before {
   grid-template-columns: 1fr 1fr;
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 56px;
 }
 @media screen and (min-width: 950px) {
   .services-cards {

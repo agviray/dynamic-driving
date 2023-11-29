@@ -1,17 +1,44 @@
 .page-template {
   .page-heading-content {
+    position: relative;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 1.5rem;
 
     & > h2 {
-      position: relative;
       color: $white;
       display: inline-block;
       font-size: 24px;
+      padding-bottom: 1.25rem;
 
       @media screen and (min-width: 750px) {
         font-size: 30px;
+      }
+    }
+
+    & > .description {
+      max-width: 550px;
+      text-align: center;
+
+      @media screen and (min-width: 950px) {
+        max-width: 700px;
+      }
+
+      p {
+        color: $white;
+
+        @media screen and (min-width: 750px) {
+          font-size: 18px;
+        }
+
+        @media screen and (min-width: 950px) {
+          font-size: 20px;
+        }
       }
     }
   }
