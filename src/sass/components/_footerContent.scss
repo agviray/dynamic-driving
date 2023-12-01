@@ -1,0 +1,70 @@
+.footer-content {
+  background-color: $redBlack;
+
+  .company-info {
+    & > h2.company-name {
+      padding-bottom: 0.5rem;
+      font-family: 'Serpentine Medium', Arial, Helvetica, sans-serif;
+      font-style: italic;
+      font-size: 28px;
+    }
+  }
+
+  h2,
+  p,
+  a,
+  .copyright {
+    color: $white;
+  }
+
+  h2 {
+    &:not(h2.company-name) {
+      display: inline-block;
+      padding: 0 0.25rem 0.5rem 0.25rem;
+      border-bottom: 1px solid $midRed;
+    }
+  }
+
+  .content-blocks {
+    @include parentElement;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .content-block {
+    &:not(.company-info) {
+      padding-top: 1.5rem;
+    }
+    ul {
+      padding-top: 1rem;
+      padding-left: 0.25rem;
+
+      &.social {
+        display: flex;
+        gap: 1rem;
+
+        & > li {
+          display: inline-block;
+          font-size: 0;
+          line-height: 0;
+        }
+
+        .icon-container {
+          display: inline-block;
+          font-size: 0;
+          line-height: 0;
+          width: 30px;
+
+          & > img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: $headerHeight 0 1rem 0;
+  }
+}

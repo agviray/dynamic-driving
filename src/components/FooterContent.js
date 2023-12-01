@@ -74,12 +74,14 @@ const FooterContent = () => {
     ({ heading, containsExternalLinks, links }, index) => (
       <div key={index} className="content-block">
         <h2>{heading}</h2>
-        <ul>
+        <ul className={containsExternalLinks ? 'social' : null}>
           {links.map(({ icon, text, to }, index) => (
             <li key={index}>
               {containsExternalLinks ? (
                 <a href={to} target="_blank" rel="noreferrer noopener">
-                  <img src={icon.imgSrc} alt={icon.alt} />
+                  <span className="icon-container">
+                    <img src={icon.imgSrc} alt={icon.alt} />
+                  </span>
                 </a>
               ) : (
                 <Link to={to}>{text}</Link>
@@ -92,16 +94,16 @@ const FooterContent = () => {
   );
 
   return (
-    <div className="inner-footer-container">
-      <div className="content-block">
-        <h2>Dynamic Driving</h2>
-        <p>1234 Smith Street</p>
-        <p>Houston, Texas 77056</p>
+    <div className="footer-content">
+      <div className="content-blocks">
+        <div className="content-block company-info">
+          <h2 className="company-name">Dynamic Driving</h2>
+          <p>1234 Smith Street</p>
+          <p>Houston, Texas 77056</p>
+        </div>
+        <>{renderedContent}</>
       </div>
-      <>{renderedContent}</>
-      <div className="content-block">
-        <div className="copyright">&copy; {currentYear} Dynamic Driving</div>
-      </div>
+      <div className="copyright">&copy; {currentYear} Dynamic Driving</div>
     </div>
   );
 };

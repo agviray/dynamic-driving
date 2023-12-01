@@ -64,6 +64,61 @@ ul {
   background-color: rgb(203, 11, 15);
 }
 
+.footer-content {
+  background-color: #423333;
+}
+.footer-content .company-info > h2.company-name {
+  padding-bottom: 0.5rem;
+  font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 28px;
+}
+.footer-content h2,
+.footer-content p,
+.footer-content a,
+.footer-content .copyright {
+  color: #f9f9f9;
+}
+.footer-content h2:not(h2.company-name) {
+  display: inline-block;
+  padding: 0 0.25rem 0.5rem 0.25rem;
+  border-bottom: 1px solid rgb(229, 11, 14);
+}
+.footer-content .content-blocks {
+  padding: 56px 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer-content .content-block:not(.company-info) {
+  padding-top: 1.5rem;
+}
+.footer-content .content-block ul {
+  padding-top: 1rem;
+  padding-left: 0.25rem;
+}
+.footer-content .content-block ul.social {
+  display: flex;
+  gap: 1rem;
+}
+.footer-content .content-block ul.social > li {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+.footer-content .content-block ul.social .icon-container {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  width: 30px;
+}
+.footer-content .content-block ul.social .icon-container > img {
+  width: 100%;
+}
+.footer-content .copyright {
+  text-align: center;
+  padding: 56px 0 1rem 0;
+}
+
 .hero-content {
   position: relative;
   display: flex;
