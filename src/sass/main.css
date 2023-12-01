@@ -53,7 +53,7 @@ ul {
 }
 .book-button > span {
   padding: 0.5rem 1rem;
-  color: #ffffff;
+  color: #f9f9f9;
   background-color: rgb(229, 11, 14);
   border-radius: 3px;
   font-size: 20px;
@@ -103,7 +103,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-  color: #ffffff;
+  color: #f9f9f9;
 }
 .hero-content h1 > span {
   display: inline-block;
@@ -119,7 +119,7 @@ ul {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   font-size: 16px;
-  color: #ffffff;
+  color: #f9f9f9;
   background-color: rgba(90, 90, 90, 0.8);
 }
 @media screen and (min-width: 1100px) {
@@ -169,7 +169,7 @@ ul {
   }
 }
 .services-content h2 {
-  color: #ffffff;
+  color: #f9f9f9;
 }
 .services-content > .main-content {
   padding-top: 1rem;
@@ -189,7 +189,7 @@ ul {
 .services-collection .card {
   position: relative;
   padding: 2rem 0;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border-radius: 5px;
 }
 @media screen and (min-width: 1000px) {
@@ -247,7 +247,7 @@ ul {
 }
 .services-collection .more-link-container {
   position: relative;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -286,7 +286,7 @@ ul {
   visibility: visible;
 }
 .services-collection .more-link-container:hover h3 > span {
-  color: #ffffff;
+  color: #f9f9f9;
 }
 
 .why-content {
@@ -374,7 +374,7 @@ ul {
   width: 90%;
   margin: -80px auto 0 auto;
   padding: 1.75rem 1.25rem;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
   z-index: 1;
   border-radius: 3px;
@@ -476,7 +476,7 @@ nav > div .hamburger > span {
   width: 100%;
   height: 1px;
   position: relative;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   z-index: 1;
   transition: all 0.3s ease;
 }
@@ -511,7 +511,7 @@ nav > div .overlay.is-open {
   background-color: rgba(53, 66, 91, 0.6);
 }
 nav > div .logo-container {
-  color: #ffffff;
+  color: #f9f9f9;
   display: block;
   line-height: 56px;
   font-size: 18px;
@@ -525,7 +525,7 @@ nav > div .nav-menu {
   bottom: 0;
   width: 70vw;
   padding: 100px 0;
-  color: #ffffff;
+  color: #f9f9f9;
   background-color: rgb(229, 11, 14);
   opacity: 0;
   transform: translate(-100%);
@@ -540,7 +540,7 @@ nav > div .nav-menu ul li span {
   display: inline-block;
   text-align: center;
   padding: 0.75rem 0;
-  color: #ffffff;
+  color: #f9f9f9;
   background-color: rgb(229, 11, 14);
   transition: all 0.3s ease;
 }
@@ -585,7 +585,7 @@ nav > div .nav-menu ul li span:hover {
   padding: 0 1.5rem;
 }
 .page-template .page-heading-content > h2 {
-  color: #ffffff;
+  color: #f9f9f9;
   display: inline-block;
   font-size: 24px;
   padding-bottom: 1.25rem;
@@ -605,7 +605,7 @@ nav > div .nav-menu ul li span:hover {
   }
 }
 .page-template .page-heading-content > .description p {
-  color: #ffffff;
+  color: #f9f9f9;
 }
 @media screen and (min-width: 750px) {
   .page-template .page-heading-content > .description p {
@@ -664,7 +664,7 @@ section#hero {
   padding-top: 56px;
 }
 section#about {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 section#why {
   background-color: #f9f9f9;
@@ -738,7 +738,7 @@ section#services::before {
 .services-cards .card {
   position: relative;
   padding: 2rem 0;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   border-radius: 5px;
 }
 @media screen and (min-width: 1000px) {

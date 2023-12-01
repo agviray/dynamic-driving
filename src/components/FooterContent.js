@@ -1,9 +1,96 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import instagramIcon from '../images/icons/instagram-logo.svg';
+import twitterXIcon from '../images/icons/twitter-x-logo.svg';
+import facebookIcon from '../images/icons/facebook-logo.svg';
 
 const currentYear = new Date().getFullYear();
 
+const footerContentBlocks = [
+  {
+    heading: 'Quick Links',
+    containsExternalLinks: false,
+    links: [
+      {
+        icon: null,
+        text: 'Home',
+        to: '/',
+      },
+      {
+        icon: null,
+        text: 'About',
+        to: '/about',
+      },
+      {
+        icon: null,
+        text: 'Services',
+        to: '/services',
+      },
+    ],
+  },
+  {
+    heading: 'More Info',
+    containsExternalLinks: false,
+    links: [
+      {
+        icon: null,
+        text: 'Reviews',
+        to: '/reviews',
+      },
+      {
+        icon: null,
+        text: 'FAQ',
+        to: '/faq',
+      },
+      {
+        icon: null,
+        text: 'Contact',
+        to: '/contact',
+      },
+    ],
+  },
+  {
+    heading: 'Social',
+    containsExternalLinks: true,
+    links: [
+      {
+        icon: { imgSrc: instagramIcon, alt: 'Instagram logo' },
+        to: 'https://www.instagram.com/',
+      },
+      {
+        icon: { imgSrc: twitterXIcon, alt: 'Twitter aka X logo' },
+        to: 'https://twitter.com/',
+      },
+      {
+        icon: { imgSrc: facebookIcon, alt: 'Facebook logo' },
+        to: 'https://www.facebook.com/',
+      },
+    ],
+  },
+];
+
 const FooterContent = () => {
+  const renderedContent = footerContentBlocks.map(
+    ({ heading, containsExternalLinks, links }, index) => (
+      <div key={index} className="content-block">
+        <h2>{heading}</h2>
+        <ul>
+          {links.map(({ icon, text, to }, index) => (
+            <li key={index}>
+              {containsExternalLinks ? (
+                <a href={to} target="_blank" rel="noreferrer noopener">
+                  <img src={icon.imgSrc} alt={icon.alt} />
+                </a>
+              ) : (
+                <Link to={to}>{text}</Link>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  );
+
   return (
     <div className="inner-footer-container">
       <div className="content-block">
@@ -11,66 +98,7 @@ const FooterContent = () => {
         <p>1234 Smith Street</p>
         <p>Houston, Texas 77056</p>
       </div>
-      <div className="content-block">
-        <h2>Quick Links</h2>
-        <ul>
-          <li>
-            <Link to="#">
-              <span>Home</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <span>About</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <span>Services</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="content-block">
-        <h2>More Info</h2>
-        <ul>
-          <li>
-            <Link to="#">
-              <span>Reviews</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <span>FAQ</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <span>Contact</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="content-block">
-        <h2>Let's Connect</h2>
-        <ul>
-          <li>
-            <Link to="#">
-              <span>Instagram</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <span>Twitter</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <span>Facebook</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <>{renderedContent}</>
       <div className="content-block">
         <div className="copyright">&copy; {currentYear} Dynamic Driving</div>
       </div>
