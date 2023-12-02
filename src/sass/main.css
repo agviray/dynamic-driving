@@ -65,32 +65,33 @@ ul {
 }
 
 .footer-content {
-  background-color: #423333;
+  background-color: hsl(0, 0%, 20%);
 }
-.footer-content .company-info > h2.company-name {
+.footer-content .company-info > h2 {
   padding-bottom: 0.5rem;
   font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 28px;
 }
 .footer-content h2,
+.footer-content h3,
 .footer-content p,
 .footer-content a,
 .footer-content .copyright {
   color: #f9f9f9;
-}
-.footer-content h2:not(h2.company-name) {
-  display: inline-block;
-  padding: 0 0.25rem 0.5rem 0.25rem;
-  border-bottom: 1px solid rgb(229, 11, 14);
 }
 .footer-content .content-blocks {
   padding: 56px 15px;
   max-width: 1000px;
   margin: 0 auto;
 }
-.footer-content .content-block:not(.company-info) {
+.footer-content .content-block {
   padding-top: 1.5rem;
+}
+.footer-content .content-block h3 {
+  display: inline-block;
+  padding: 0 0.25rem 0.5rem 0.25rem;
+  border-bottom: 1px solid rgb(229, 11, 14);
 }
 .footer-content .content-block ul {
   padding-top: 1rem;
