@@ -100,6 +100,8 @@ const FooterContent = () => {
           <h2>Dynamic Driving</h2>
           <p>1234 Smith Street</p>
           <p>Houston, Texas 77056</p>
+          <p>(000) 123-4567</p>
+          <p>emailaddress@example.com</p>
         </div>
         <>{renderedContent}</>
       </div>
