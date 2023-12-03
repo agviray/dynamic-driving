@@ -3,6 +3,9 @@ import { Link } from 'gatsby';
 import instagramIcon from '../images/icons/instagram-logo.svg';
 import twitterXIcon from '../images/icons/twitter-x-logo.svg';
 import facebookIcon from '../images/icons/facebook-logo.svg';
+import locationIcon from '../images/icons/location-icon.png';
+import phoneIcon from '../images/icons/phone-icon.png';
+import emailIcon from '../images/icons/email-icon.png';
 
 const currentYear = new Date().getFullYear();
 
@@ -101,10 +104,33 @@ const FooterContent = () => {
       <div className="content-blocks">
         <article className="company-info">
           <h2>Dynamic Driving</h2>
-          <p>1234 Smith Street</p>
-          <p>Houston, Texas 77056</p>
-          <p>(000) 123-4567</p>
-          <p>emailaddress@example.com</p>
+          <ul>
+            <li>
+              <span className="icon-container">
+                <img src={locationIcon} alt="Location icon" />
+              </span>
+              <span className="text-container">
+                <span>1234 Example Street</span>
+                <span>Houston, Texas 77056</span>
+              </span>
+            </li>
+            <li>
+              <span className="icon-container">
+                <img src={phoneIcon} alt="Phone icon" />
+              </span>
+              <span className="text-container">
+                <span>(000) 123-4567</span>
+              </span>
+            </li>
+            <li>
+              <span className="icon-container">
+                <img src={emailIcon} alt="Email icon" />
+              </span>
+              <span className="text-container">
+                <span>emailaddress@example.com</span>
+              </span>
+            </li>
+          </ul>
         </article>
         <>{renderedContent}</>
       </div>
