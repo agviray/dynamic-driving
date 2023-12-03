@@ -84,7 +84,10 @@ const FooterContent = () => {
                   </span>
                 </a>
               ) : (
-                <Link to={to}>{text}</Link>
+                <>
+                  <span className="arrow"></span>
+                  <Link to={to}>{text}</Link>
+                </>
               )}
             </li>
           ))}

@@ -129,7 +129,18 @@ ul {
   padding-left: 0.25rem;
 }
 .footer-content .content-block ul:not(.social) > li {
+  display: flex;
+  align-items: center;
   padding: 0.5rem 0;
+}
+.footer-content .content-block ul:not(.social) > li span.arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  border-top: 2px solid #f9f9f9;
+  border-right: 2px solid #f9f9f9;
+  transform: rotate(45deg);
 }
 .footer-content .content-block ul:not(.social) a {
   letter-spacing: normal;
@@ -139,23 +150,13 @@ ul {
   letter-spacing: 1.5px;
   color: rgb(229, 11, 14);
 }
-.footer-content .content-block ul:not(.social) a::before {
-  display: inline-block;
-  content: "";
-  position: relative;
-  width: 7px;
-  height: 7px;
-  margin-right: 10px;
-  border-top: 2px solid #f9f9f9;
-  border-right: 2px solid #f9f9f9;
-  transform: rotate(45deg);
-}
 .footer-content .content-block ul.social {
   display: flex;
   gap: 1rem;
 }
 .footer-content .content-block ul.social > li {
   display: inline-block;
+  padding: 0.5rem 0;
   font-size: 0;
   line-height: 0;
 }
