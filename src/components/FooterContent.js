@@ -72,7 +72,7 @@ const footerContentBlocks = [
 const FooterContent = () => {
   const renderedContent = footerContentBlocks.map(
     ({ heading, containsExternalLinks, links }, index) => (
-      <div key={index} className="content-block">
+      <article key={index} className="content-block">
         <h3>{heading}</h3>
         <ul className={containsExternalLinks ? 'social' : null}>
           {links.map(({ icon, text, to }, index) => (
@@ -89,20 +89,20 @@ const FooterContent = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </article>
     )
   );
 
   return (
     <div className="footer-content">
       <div className="content-blocks">
-        <div className="company-info">
+        <article className="company-info">
           <h2>Dynamic Driving</h2>
           <p>1234 Smith Street</p>
           <p>Houston, Texas 77056</p>
           <p>(000) 123-4567</p>
           <p>emailaddress@example.com</p>
-        </div>
+        </article>
         <>{renderedContent}</>
       </div>
       <div className="copyright">&copy; {currentYear} Dynamic Driving</div>

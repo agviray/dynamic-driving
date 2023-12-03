@@ -1,5 +1,9 @@
 @mixin parentElement {
-  padding: $headerHeight 15px;
+  padding: $headerHeight 1rem;
+
+  @media screen and (min-width: 950px) {
+    padding: 100px 1rem;
+  }
 }
 
 @mixin sectionContentHeading {

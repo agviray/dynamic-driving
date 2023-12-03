@@ -76,12 +76,17 @@ ul {
   color: #f9f9f9;
 }
 .footer-content .content-blocks {
-  padding: 56px 15px;
+  padding: 56px 1rem;
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 56px 0;
+}
+@media screen and (min-width: 950px) {
+  .footer-content .content-blocks {
+    padding: 100px 1rem;
+  }
 }
 @media screen and (min-width: 750px) {
   .footer-content .content-blocks {
@@ -91,13 +96,14 @@ ul {
 @media screen and (min-width: 950px) {
   .footer-content .content-blocks {
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    padding: 100px 0;
   }
 }
-.footer-content .content-blocks > div {
+.footer-content .content-blocks > article.content-block {
   padding-top: 1.25rem;
 }
 @media screen and (min-width: 750px) {
-  .footer-content .content-blocks > div {
+  .footer-content .content-blocks > article.content-block, .footer-content .content-blocks > article.company-info {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -187,6 +193,11 @@ ul {
 .footer-content .copyright {
   text-align: center;
   padding: 56px 0 1rem 0;
+}
+@media screen and (min-width: 950px) {
+  .footer-content .copyright {
+    padding: 100px 0 1rem 0;
+  }
 }
 
 .hero-content {
@@ -743,12 +754,17 @@ nav > div .nav-menu ul li span:hover {
   }
 }
 .page-template .main-content {
-  padding: 56px 15px;
+  padding: 56px 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 .page-template .main-content .paragraph-group p:not(:nth-of-type(1)) {
   padding-top: 1rem;
+}
+@media screen and (min-width: 950px) {
+  .page-template .main-content {
+    padding: 100px 1rem;
+  }
 }
 
 .about-hero {
@@ -783,7 +799,12 @@ nav > div .nav-menu ul li span:hover {
 }
 
 section#about, section#why, section#services {
-  padding: 56px 15px;
+  padding: 56px 1rem;
+}
+@media screen and (min-width: 950px) {
+  section#about, section#why, section#services {
+    padding: 100px 1rem;
+  }
 }
 section#hero {
   padding-top: 56px;
