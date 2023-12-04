@@ -16,11 +16,11 @@ const navlinks = [
   },
   {
     linkName: 'REVIEWS',
-    href: '#reviews',
+    href: '/reviews',
   },
   {
     linkName: 'CONTACT',
-    href: '#contact',
+    href: '/contact',
   },
 ];
 
