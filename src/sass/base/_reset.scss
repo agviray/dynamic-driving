@@ -2,6 +2,5 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // TODO: Create variable for main/global font color.
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $mainFf;
 }

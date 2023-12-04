@@ -16,12 +16,14 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: $headingFf;
   color: $mainBlack;
 }
 
 p {
   line-height: 1.5;
-  color: $mainBlack;
+  font-family: $mainFf;
+  color: $midBlack;
 }
 
 a {

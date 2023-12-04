@@ -14,6 +14,7 @@
       color: $white;
       display: inline-block;
       font-size: 24px;
+      letter-spacing: $headingLetterSpacing;
       padding-bottom: 1.25rem;
 
       @media screen and (min-width: 750px) {
