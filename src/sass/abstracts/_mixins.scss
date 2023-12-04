@@ -6,6 +6,13 @@
   }
 }
 
+@mixin companyNameSmall {
+  font-family: 'Serpentine Medium', Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
 @mixin sectionContentHeading {
   h2 {
     font-size: 24px;

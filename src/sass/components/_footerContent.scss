@@ -46,10 +46,7 @@
   // - Styles for company info.
   .company-info {
     & > h2 {
-      padding-bottom: 0.5rem;
-      font-family: 'Serpentine Medium', Arial, Helvetica, sans-serif;
-      font-style: italic;
-      font-size: 28px;
+      @include companyNameSmall;
       padding-bottom: 1.5rem;
     }
 

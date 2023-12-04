@@ -3,23 +3,23 @@ import { Link } from 'gatsby';
 
 const navlinks = [
   {
-    linkName: 'Home',
+    linkName: 'HOME',
     href: '/#hero',
   },
   {
-    linkName: 'About',
+    linkName: 'ABOUT',
     href: '/about',
   },
   {
-    linkName: 'Services',
+    linkName: 'SERVICES',
     href: '/services',
   },
   {
-    linkName: 'Reviews',
+    linkName: 'REVIEWS',
     href: '#reviews',
   },
   {
-    linkName: 'Contact',
+    linkName: 'CONTACT',
     href: '#contact',
   },
 ];

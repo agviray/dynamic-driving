@@ -103,7 +103,7 @@ const FooterContent = () => {
     <div className="footer-content">
       <div className="content-blocks">
         <article className="company-info">
-          <h2>Dynamic Driving</h2>
+          <h2>DYNAMIC DRIVING</h2>
           <ul>
             <li>
               <span className="icon-container">
@@ -134,7 +134,7 @@ const FooterContent = () => {
         </article>
         <>{renderedContent}</>
       </div>
-      <div className="copyright">&copy; {currentYear} Dynamic Driving</div>
+      <div className="copyright">&copy; {currentYear} DYNAMIC DRIVING</div>
     </div>
   );
 };

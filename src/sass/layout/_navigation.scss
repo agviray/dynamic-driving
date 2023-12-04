@@ -89,14 +89,12 @@ nav {
       }
     }
 
-    // - "Return Home" link container
+    // - "DYNAMIC DRIVING" link container
     .logo-container {
+      @include companyNameSmall;
       color: $white;
       display: block;
       line-height: $headerHeight;
-      font-size: 18px;
-      font-family: 'Serpentine Medium', Arial, Helvetica, sans-serif;
-      font-style: italic;
     }
 
     // - Navigation Menu styles

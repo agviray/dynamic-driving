@@ -128,10 +128,10 @@ ul {
   }
 }
 .footer-content .company-info > h2 {
-  padding-bottom: 0.5rem;
   font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
   font-style: italic;
-  font-size: 28px;
+  font-size: 24px;
+  letter-spacing: 1px;
   padding-bottom: 1.5rem;
 }
 .footer-content .company-info ul {
@@ -299,12 +299,14 @@ ul {
   font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 30px;
+  letter-spacing: 1px;
 }
 .hero-content h1 > span:nth-of-type(2) {
   position: relative;
   display: inline-block;
   padding: 0.25rem 0.75rem;
   font-size: 16px;
+  letter-spacing: 1px;
   color: #f9f9f9;
   background-color: rgba(90, 90, 90, 0.8);
 }
@@ -700,12 +702,13 @@ nav > div .overlay.is-open {
   background-color: rgba(53, 66, 91, 0.6);
 }
 nav > div .logo-container {
+  font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 1px;
   color: #f9f9f9;
   display: block;
   line-height: 56px;
-  font-size: 18px;
-  font-family: "Serpentine Medium", Arial, Helvetica, sans-serif;
-  font-style: italic;
 }
 nav > div .nav-menu {
   position: fixed;
