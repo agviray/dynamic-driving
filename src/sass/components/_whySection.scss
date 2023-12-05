@@ -3,144 +3,120 @@
   @include sectionContentHeading;
   max-width: 1400px;
   margin: 0 auto;
-
-  & > .main-content {
-    padding-top: 1rem;
-  }
 }
 
 .why-collection {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 7rem 1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 8rem;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
 
   @media screen and (min-width: 950px) {
-    max-width: none;
-    margin: 0;
-    padding: 0 1rem 14rem 1rem;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0 2rem;
   }
 
-  @media screen and (min-width: 1200px) {
-    gap: 0 4rem;
-  }
-
-  .card {
-    max-width: 450px;
-    margin: 0 auto;
-    border-radius: 5px;
-
-    @media screen and (min-width: 950px) {
-      max-width: none;
-    }
-
-    // - .card Inner container
+  & > article {
     & > div {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
 
-      & > .image-container {
-        display: inline-block;
-        max-width: 700px;
-        line-height: 0;
-        font-size: 0;
-        border-radius: 5px;
-
-        img {
-          width: 100%;
-          border-radius: inherit;
-        }
-
-        @media screen and (min-width: 950px) {
-          box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-          -webkit-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-          -moz-box-shadow: 1px 12px 21px 2px rgba(51, 51, 51, 0.75);
-        }
+      @media screen and (min-width: 750px) {
+        grid-template-columns: 1fr 1fr;
       }
 
-      & > .card-main-content {
-        position: absolute;
-        top: 100%;
+      @media screen and (min-width: 950px) {
+        grid-template-columns: 1fr;
+      }
+
+      & > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        margin: -80px auto 0 auto;
-        padding: 1.75rem 1.25rem;
-        background-color: $white;
-        box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
-          rgba(0, 0, 0, 0.12) 0px 3px 1px -2px,
-          rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
-        z-index: 1;
-        border-radius: 3px;
+        height: 230px;
 
         @media screen and (min-width: 950px) {
-          width: 90%;
-          min-height: 294px;
-          margin-top: -50px;
+          height: 300px;
         }
 
-        @media screen and (min-width: 1000px) {
-          padding: 2rem 1.5rem;
+        &.image-container {
+          line-height: 0;
+          font-size: 0;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &.instructors {
+            background-image: url('../images/driving-instructor-teaching-student.jpg');
+          }
+          &.learning {
+            background-image: url('../images/driving-student-holding-keys.jpeg');
+            @media screen and (min-width: 750px) {
+              order: 1;
+            }
+          }
+          &.schedule {
+            background-image: url('../images/calendar-marked-with-day-off.jpeg');
+          }
         }
 
-        // - Card icon (only displayed when vw 950px or higher.
-        .icon-container {
-          display: none;
-          justify-content: center;
-          align-items: center;
-          width: 50px;
-          height: 50px;
-          margin-bottom: 1.5rem;
-          border-radius: 50%;
-          background-color: $mainBlack;
+        &.card-main-content {
+          gap: 0.75rem;
+          padding: 0 0.75rem;
+          background-color: #423d3d;
 
-          // - Optional icon display
+          @media screen and (min-width: 750px) {
+            padding: 1rem;
+          }
+
           @media screen and (min-width: 950px) {
-            // display: flex;
+            padding: 2rem;
           }
 
-          @media screen and (min-width: 1000px) {
-            width: 70px;
-            height: 70px;
-          }
+          // - Icon styles (only shown at min-width: 950px)
+          & > .icon-container {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            width: 35px;
+            height: 35px;
 
-          & > span {
-            display: inline-block;
-            width: 25px;
-            line-height: 0;
-            font-size: 0;
-
-            @media screen and (min-width: 1000px) {
-              width: 35px;
-              height: 35px;
+            @media screen and (min-width: 950px) {
+              display: flex;
             }
 
             & > img {
+              width: 100%;
               max-width: 100%;
             }
           }
-        }
 
-        h3 {
-          padding-bottom: 1rem;
-          text-align: center;
-          font-size: 18px;
-        }
+          & > h3 {
+            position: relative;
+            padding: 0 0.5rem 0.25rem 0.5rem;
+            text-align: center;
+            font-size: 18px;
+            color: $white;
 
-        .text-container {
-          text-align: center;
-          font-size: 14px;
+            @media screen and (min-width: 950px) {
+              font-size: 20px;
+            }
 
-          @media screen and (min-width: 950px) {
-            font-size: 15px;
+            // - Heading red underline
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background-color: $midRed;
+            }
+          }
+
+          & > .text-container > p {
+            color: $white;
+            text-align: center;
           }
         }
       }

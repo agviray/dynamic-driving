@@ -11,6 +11,7 @@ const whyCards = [
     image: {
       src: instructorAndStudent,
       alt: 'Driving instructor teaching student',
+      class: 'instructors',
     },
     icon: {
       src: instructorIcon,
@@ -25,13 +26,14 @@ const whyCards = [
     image: {
       src: driverWithKeys,
       alt: 'Student driver happily holding keys',
+      class: 'learning',
     },
     icon: {
       src: checklistIcon,
       alt: 'Checklist Icon',
     },
     heading: 'Customized Learning Plans',
-    text: `We recognize that every student is unique. Our personalized
+    text: `Every student is unique. Our personalized
     learning plans cater to your individual needs, pace, and
     learning style, maximizing your chances of success.`,
   },
@@ -39,14 +41,14 @@ const whyCards = [
     image: {
       src: calendarDayOff,
       alt: 'Calendar marked with a day off',
+      class: 'schedule',
     },
     icon: {
       src: calendarIcon,
       alt: 'Calendar icon',
     },
     heading: 'Flexible Scheduling',
-    text: `Life can be busy, and we understand that. We offer flexible scheduling options to accommodate your commitments
-    and make it convenient for you to learn at your own pace.`,
+    text: `Life can get busy. That's why we offer flexible scheduling options to accommodate your commitments, making it convenient for you to learn at your own pace.`,
   },
 ];
 
@@ -56,14 +58,12 @@ const WhySection = () => {
       return (
         <article className="card" key={index}>
           <div>
-            <span className="image-container">
-              <img src={image.src} alt={image.alt} />
-            </span>
+            <div className={`image-container ${image.class}`}></div>
             <div className="card-main-content">
               <span className="icon-container">
-                <span>
-                  <img src={icon.src} alt={icon.alt} />
-                </span>
+                {/* <span> */}
+                <img src={icon.src} alt={icon.alt} />
+                {/* </span> */}
               </span>
               <h3>{heading}</h3>
               <div className="text-container">
