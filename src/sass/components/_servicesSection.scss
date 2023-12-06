@@ -10,68 +10,24 @@
   }
 }
 
-.services-collection {
+.services-cards {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, minmax(185px, 100%));
+  max-width: 600px;
+  margin: 0 auto;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 950px) {
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2.5rem;
+    max-width: none;
+    padding: 1rem;
   }
 
   // - Styles for immediate children (the cards)
   @include cardWithIcon;
-
-  // - Link to services page
-  .more-link-container {
-    position: relative;
-    background-color: $white;
-    overflow: hidden;
-    border-radius: 5px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-
-    h3 {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-
-      & > span {
-        display: inline-block;
-        font-size: 15px;
-
-        @media screen and (min-width: 1000px) {
-          font-size: 20px;
-        }
-      }
-    }
-
-    // - On .more-link-container hover
-    &:hover {
-      &::before {
-        background-color: $midRed;
-        opacity: 1;
-        visibility: visible;
-      }
-
-      h3 > span {
-        color: $white;
-      }
-    }
+  & > .card {
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+      rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
   }
 }

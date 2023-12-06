@@ -1,18 +1,18 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
-import driversEduIcon from '../images/icons/instructor.png';
+import driversEduIcon from '../images/icons/driver-sitting-in-driver-seat.png';
 import behindWheelIcon from '../images/icons/steering-wheel.png';
 import drivingTestIcon from '../images/icons/driving-test.png';
 import defensiveDrivingIcon from '../images/icons/traffic-light-and-car.png';
-import privateLessonsIcon from '../images/icons/driver-sitting-in-driving-seat.png';
+import privateLessonsIcon from '../images/icons/private-lesson.png';
 import customProgramIcon from '../images/icons/happy-face.png';
 
 const servicesCards = [
   {
     icon: {
       src: driversEduIcon,
-      alt: `Instructor teaching`,
+      alt: `Driver sitting in driver seat icon`,
     },
     heading: [`Driver's Education`, `Courses`],
     text: ``,

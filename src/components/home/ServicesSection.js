@@ -1,24 +1,27 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import driversEduIcon from '../../images/icons/instructor.png';
-import steeringWheelIcon from '../../images/icons/steering-wheel.png';
+import driversEduIcon from '../../images/icons/driver-sitting-in-driver-seat.png';
+import behindWheelIcon from '../../images/icons/steering-wheel.png';
 import drivingTestIcon from '../../images/icons/driving-test.png';
+import defensiveDrivingIcon from '../../images/icons/traffic-light-and-car.png';
+import privateLessonsIcon from '../../images/icons/private-lesson.png';
+import customProgramIcon from '../../images/icons/happy-face.png';
 
 const servicesCards = [
   {
     icon: {
       src: driversEduIcon,
-      alt: `Instructor teaching`,
+      alt: `Driver sitting in driver seat icon`,
     },
     heading: [`Driver's Education`, `Courses`],
     text: ``,
   },
   {
     icon: {
-      src: steeringWheelIcon,
+      src: behindWheelIcon,
       alt: `Steering wheel icon`,
     },
-    heading: [`Behind-the-Wheel`, `Training`],
+    heading: [`Behind-the-Weel`, `Training`],
     text: ``,
   },
   {
@@ -27,6 +30,30 @@ const servicesCards = [
       alt: `Paper and pencil icon`,
     },
     heading: [`Driver's License`, `Test Preparation`],
+    text: ``,
+  },
+  {
+    icon: {
+      src: defensiveDrivingIcon,
+      alt: `Traffic light and car`,
+    },
+    heading: [`Defensive Driving`, `Courses`],
+    text: ``,
+  },
+  {
+    icon: {
+      src: privateLessonsIcon,
+      alt: `Driver sitting in driver's seat`,
+    },
+    heading: [`Private`, `Lessons`],
+    text: ``,
+  },
+  {
+    icon: {
+      src: customProgramIcon,
+      alt: `Smiley face`,
+    },
+    heading: [`Specialized/Custom`, `Training Programs`],
     text: ``,
   },
 ];
@@ -57,17 +84,7 @@ const ServicesSection = () => {
     <div className="services-content">
       <h2>Our Services</h2>
       <div className="main-content">
-        <div className="services-collection">
-          {renderedContent}
-          <article className="more-link-container">
-            <Link to="/services">
-              <h3>
-                <span>View All</span>
-                <span>Services</span>
-              </h3>
-            </Link>
-          </article>
-        </div>
+        <div className="services-cards">{renderedContent}</div>
       </div>
     </div>
   );
