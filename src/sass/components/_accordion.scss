@@ -1,0 +1,67 @@
+.accordion {
+  & > .heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 700px) {
+      padding: 2rem;
+    }
+    & > p {
+      font-family: 'Nunito Sans Bold', Arial, Helvetica, sans-serif;
+      color: $white;
+      font-size: 16px;
+
+      @media screen and (min-width: 950px) {
+        font-size: 18px;
+      }
+    }
+
+    // Arrow container
+    & > div {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0.5rem;
+
+      // - Arrow
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-width: 2px 2px 0 0;
+        border-color: $white;
+        border-style: solid;
+        transform: rotate(135deg);
+
+        &.isOpen {
+          transform: rotate(-45deg);
+        }
+
+        @media screen and (min-width: 700px) {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: none;
+    padding: 1rem;
+    background-color: $white;
+
+    &.isOpen {
+      display: block;
+    }
+
+    @media screen and (min-width: 950px) {
+      padding: 2rem;
+      font-size: 18px;
+    }
+  }
+}
