@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import PageLink from '../PageLink';
 import driversEduIcon from '../../images/icons/driver-sitting-in-driver-seat.png';
 import behindWheelIcon from '../../images/icons/steering-wheel.png';
 import drivingTestIcon from '../../images/icons/driving-test.png';
@@ -86,7 +86,7 @@ const ServicesSection = () => {
       <div className="main-content">
         <div className="services-cards">{renderedContent}</div>
       </div>
-      <Button src={'services'} name={'View Service Details'} />
+      <PageLink toPage={'services'} name={'View Service Details'} />
     </div>
   );
 };

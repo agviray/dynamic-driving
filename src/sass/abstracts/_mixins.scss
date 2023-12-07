@@ -42,7 +42,8 @@
   position: relative;
   padding-top: 2.5rem;
 
-  & > span {
+  & > span,
+  & > a > span {
     display: inline-block;
     padding: 0.5rem 1rem;
     color: $white;
