@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
 import driversEduIcon from '../images/icons/driver-sitting-in-driver-seat.png';
@@ -7,6 +7,7 @@ import drivingTestIcon from '../images/icons/driving-test.png';
 import defensiveDrivingIcon from '../images/icons/traffic-light-and-car.png';
 import privateLessonsIcon from '../images/icons/private-lesson.png';
 import customProgramIcon from '../images/icons/happy-face.png';
+import Accordion from '../components/Accordion';
 
 const servicesCards = [
   {
@@ -60,23 +61,15 @@ const servicesCards = [
 ];
 
 const Services = ({ location }) => {
-  useEffect(() => {
-    console.log(location);
-  }, [location]);
-
   const renderedContent = servicesCards.map(
     ({ icon, heading, text }, index) => {
       return (
         <article className="services-card" key={index}>
-          <div className="header">
-            <span className="icon-container">
-              <img src={icon.src} alt={icon.alt} />
-            </span>
-            <h3>{heading}</h3>
-          </div>
-          <div className="content">
-            <p>{text}</p>
-          </div>
+          <Accordion
+            header={{ icon: icon, heading: heading }}
+            content={text}
+            showArrow={false}
+          />
         </article>
       );
     }

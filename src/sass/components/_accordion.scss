@@ -1,34 +1,42 @@
 .accordion {
-  & > .heading {
+  // - Accordion header container
+  & > .header-container {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: $darkGray;
+    height: 97px;
 
     &:hover {
       cursor: pointer;
     }
 
-    @media screen and (min-width: 700px) {
-      padding: 2rem;
-    }
-    & > p {
-      font-family: 'Nunito Sans Bold', Arial, Helvetica, sans-serif;
-      color: $white;
-      font-size: 16px;
-
-      @media screen and (min-width: 950px) {
-        font-size: 18px;
+    // - Image icon container (if available)
+    & > .icon-container {
+      display: inline-block;
+      width: 30px;
+      min-width: 30px;
+      line-height: 0;
+      font-size: 0;
+      & > img {
+        width: 100%;
       }
     }
 
-    // Arrow container
-    & > div {
+    // - Heading
+    & > h3 {
+      font-family: 'Nunito Sans Bold', Arial, Helvetica, sans-serif;
+      color: $white;
+      font-size: 18px;
+    }
+
+    // - Arrow container
+    & > .arrow-container {
       display: flex;
       flex-direction: column;
       padding: 0 0.5rem;
 
-      // - Arrow
       span {
         display: inline-block;
         width: 10px;
@@ -50,10 +58,12 @@
     }
   }
 
-  .content {
+  // - Accordion main content container
+  .content-container {
     display: none;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: $white;
+    border: 1px solid $darkGray;
 
     &.isOpen {
       display: block;
