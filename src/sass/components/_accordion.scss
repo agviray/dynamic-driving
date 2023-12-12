@@ -4,9 +4,14 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: $darkGray;
-    height: 97px;
+    height: 75px;
+
+    @media screen and (min-width: 950px) {
+      height: 97px;
+      padding: 1.5rem;
+    }
 
     &:hover {
       cursor: pointer;
@@ -28,7 +33,11 @@
     & > h3 {
       font-family: 'Nunito Sans Bold', Arial, Helvetica, sans-serif;
       color: $white;
-      font-size: 18px;
+      font-size: 16px;
+
+      @media screen and (min-width: 950px) {
+        font-size: 18px;
+      }
     }
 
     // - Arrow container
@@ -61,7 +70,7 @@
   // - Accordion main content container
   .content-container {
     display: none;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: $white;
     border: 1px solid $darkGray;
 
@@ -70,7 +79,7 @@
     }
 
     @media screen and (min-width: 950px) {
-      padding: 2rem;
+      padding: 1.5rem;
       font-size: 18px;
     }
   }

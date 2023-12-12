@@ -35,6 +35,7 @@
   grid-template-columns: 1fr;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 2rem;
 
   @media screen and (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
@@ -43,7 +44,7 @@
   @media screen and (min-width: 950px) {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: none;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
   }
 
   // - Styles for immediate children (the cards)
