@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { navigate } from 'gatsby';
 
 const PageLink = ({ toPage, name }) => {
   return (

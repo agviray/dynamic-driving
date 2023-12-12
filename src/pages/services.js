@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
 import driversEduIcon from '../images/icons/driver-sitting-in-driver-seat.png';
@@ -14,72 +14,73 @@ const servicesCards = [
       src: driversEduIcon,
       alt: `Driver sitting in driver seat icon`,
     },
-    heading: [`Driver's Education`, `Courses`],
-    text: ``,
+    heading: `Driver's Education Courses`,
+    text: `We provide comprehensive driver's education courses, covering both theoretical and practical aspects of driving. Our courses often include classroom instruction on traffic laws, road signs, and safety regulations.`,
   },
   {
     icon: {
       src: behindWheelIcon,
       alt: `Steering wheel icon`,
     },
-    heading: [`Behind-the-Weel`, `Training`],
-    text: ``,
+    heading: `Behind-the-Wheel Training`,
+    text: `We offer practical, hands-on training with a certified driving instructor. This involves behind-the-wheel driving practice, where students learn vehicle control, proper maneuvering, and safe driving techniques on the road.`,
   },
   {
     icon: {
       src: drivingTestIcon,
       alt: `Paper and pencil icon`,
     },
-    heading: [`Driver's License`, `Test Preparation`],
-    text: ``,
+    heading: `Driver's License Test Preparation`,
+    text: `Our preparation courses are specifically designed to help students pass their driver's license tests. These programs cover the specific requirements and skills needed to successfully navigate the written and practical portions of the examination.`,
   },
   {
     icon: {
       src: defensiveDrivingIcon,
       alt: `Traffic light and car`,
     },
-    heading: [`Defensive Driving`, `Courses`],
-    text: ``,
+    heading: `Defensive Driving Courses`,
+    text: `We offer defensive driving courses to teach students how to anticipate and respond to potential hazards on the road. These courses focus on developing safe driving habits, reducing risks, and handling unexpected situations.`,
   },
   {
     icon: {
       src: privateLessonsIcon,
       alt: `Driver sitting in driver's seat`,
     },
-    heading: [`Private`, `Lessons`],
-    text: ``,
+    heading: `Private Lessons`,
+    text: `One-on-one instruction for individuals who prefer personalized attention and a more flexible schedule.`,
   },
   {
     icon: {
       src: customProgramIcon,
       alt: `Smiley face`,
     },
-    heading: [`Specialized/Custom`, `Training Programs`],
-    text: ``,
+    heading: `Specialized/Custom Training Programs`,
+    text: `We provide tailored programs for specific demographics or needs, such as teen driver education, senior driver refresher courses, and adaptive driving programs for individuals with disabilities.`,
   },
 ];
 
-const Services = () => {
-  const renderedContent = servicesCards.map(({ icon, heading }, index) => {
-    return (
-      <article className="card" key={index}>
-        <div>
-          <div className="card-main-content">
+const Services = ({ location }) => {
+  useEffect(() => {
+    console.log(location);
+  }, [location]);
+
+  const renderedContent = servicesCards.map(
+    ({ icon, heading, text }, index) => {
+      return (
+        <article className="services-card" key={index}>
+          <div className="header">
             <span className="icon-container">
-              <span>
-                <img src={icon.src} alt={icon.alt} />
-              </span>
+              <img src={icon.src} alt={icon.alt} />
             </span>
-            <h3>
-              {heading.map((text, index) => (
-                <span key={index}>{text}</span>
-              ))}
-            </h3>
+            <h3>{heading}</h3>
           </div>
-        </div>
-      </article>
-    );
-  });
+          <div className="content">
+            <p>{text}</p>
+          </div>
+        </article>
+      );
+    }
+  );
   return (
     <Layout>
       <PageTemplate>

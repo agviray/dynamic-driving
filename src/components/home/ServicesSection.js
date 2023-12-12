@@ -21,7 +21,7 @@ const servicesCards = [
       src: behindWheelIcon,
       alt: `Steering wheel icon`,
     },
-    heading: [`Behind-the-Weel`, `Training`],
+    heading: [`Behind-the-Wheel`, `Training`],
     text: ``,
   },
   {
