@@ -95,9 +95,9 @@ const Services = () => {
           <div className="main-content">
             <div className="paragraph-group">
               <p>
-                Our services include the following and so much more! Give us a
-                shout if what you're looking for is not listed. We're always
-                glad to answer questions and help in any way that we can.
+                Click a service to view its details. If what you're looking for
+                isn't listed, give us a shout! We're always happy to answer
+                questions and help in any way that we can.
               </p>
             </div>
             <div className="services-cards">{renderedContent}</div>

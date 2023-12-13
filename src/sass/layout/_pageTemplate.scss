@@ -1,4 +1,7 @@
 .page-template {
+  // - Set padding-top of $headerHeight to push page content down, since header has fixed position.
+  padding-top: $headerHeight;
+
   .page-heading-content {
     position: relative;
     max-width: 1000px;

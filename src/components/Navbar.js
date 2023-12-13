@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const navlinks = [
   {
     linkName: 'HOME',
-    href: '/#hero',
+    href: '/',
   },
   {
     linkName: 'ABOUT',
@@ -31,16 +31,16 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const closeMobileMenu = () => {
-    return isMenuOpen ? setIsMenuOpen(false) : null;
-  };
+  // const closeMobileMenu = () => {
+  //   return isMenuOpen ? setIsMenuOpen(false) : null;
+  // };
 
   const renderedContent = navlinks.map(({ linkName, href }, index) => {
     return (
       <li key={index}>
-        <a href={href}>
-          <span onClick={closeMobileMenu}>{linkName}</span>
-        </a>
+        <Link to={href}>
+          <span>{linkName}</span>
+        </Link>
       </li>
     );
   });

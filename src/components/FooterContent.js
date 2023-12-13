@@ -40,11 +40,11 @@ const footerContentBlocks = [
         text: 'Reviews',
         to: '/reviews',
       },
-      {
-        icon: null,
-        text: 'FAQ',
-        to: '/faq',
-      },
+      // {
+      //   icon: null,
+      //   text: 'FAQ',
+      //   to: '/faq',
+      // },
       {
         icon: null,
         text: 'Contact',
