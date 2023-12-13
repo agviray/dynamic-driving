@@ -18,9 +18,8 @@
   margin: 0 auto;
 
   @media screen and (min-width: 950px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.5rem;
-    max-width: none;
+    gap: 1.5rem;
+    max-width: 800px;
     padding: 1rem;
   }
 

@@ -40,22 +40,22 @@ const servicesCards = [
     heading: [`Defensive Driving`, `Courses`],
     text: ``,
   },
-  {
-    icon: {
-      src: privateLessonsIcon,
-      alt: `Driver sitting in driver's seat`,
-    },
-    heading: [`Private`, `Lessons`],
-    text: ``,
-  },
-  {
-    icon: {
-      src: customProgramIcon,
-      alt: `Smiley face`,
-    },
-    heading: [`Specialized/Custom`, `Training Programs`],
-    text: ``,
-  },
+  // {
+  //   icon: {
+  //     src: privateLessonsIcon,
+  //     alt: `Driver sitting in driver's seat`,
+  //   },
+  //   heading: [`Private`, `Lessons`],
+  //   text: ``,
+  // },
+  // {
+  //   icon: {
+  //     src: customProgramIcon,
+  //     alt: `Smiley face`,
+  //   },
+  //   heading: [`Specialized/Custom`, `Training Programs`],
+  //   text: ``,
+  // },
 ];
 
 const ServicesSection = () => {
@@ -86,7 +86,7 @@ const ServicesSection = () => {
       <div className="main-content">
         <div className="services-cards">{renderedContent}</div>
       </div>
-      <PageLink toPage={'services'} name={'View Service Details'} />
+      <PageLink toPage={'services'} name={'More Services & Details'} />
     </div>
   );
 };
