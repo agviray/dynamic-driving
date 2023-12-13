@@ -77,32 +77,34 @@ const Services = () => {
   return (
     <Layout>
       <PageTemplate>
-        <section>
-          <div className="services-hero">
-            <div className="page-heading-content">
-              <h2>Services</h2>
-              <div className="description">
-                <p>
-                  We cater to a diverse range of learners, ensuring that each
-                  student receives the proper training needed to safely navigate
-                  the complexities of the road.
-                </p>
+        <div className="services-page">
+          <section>
+            <div className="services-hero">
+              <div className="page-heading-content">
+                <h2>Services</h2>
+                <div className="description">
+                  <p>
+                    We cater to a diverse range of learners, ensuring that each
+                    student receives the proper training needed to safely
+                    navigate the complexities of the road.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <div className="main-content">
-            <div className="paragraph-group">
-              <p>
-                Click a service to view its details. If what you're looking for
-                isn't listed, give us a shout! We're always happy to answer
-                questions and help in any way that we can.
-              </p>
+          </section>
+          <section>
+            <div className="main-content">
+              <div className="paragraph-group">
+                <p>
+                  Click a service to view its details. If what you're looking
+                  for isn't listed, give us a shout! We're always happy to
+                  answer questions and help in any way that we can.
+                </p>
+              </div>
+              <div className="services-cards">{renderedContent}</div>
             </div>
-            <div className="services-cards">{renderedContent}</div>
-          </div>
-        </section>
+          </section>
+        </div>
       </PageTemplate>
     </Layout>
   );

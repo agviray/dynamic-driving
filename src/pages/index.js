@@ -7,15 +7,17 @@ import ServicesSection from '../components/home/ServicesSection';
 const Home = () => {
   return (
     <Layout>
-      <section id="hero">
-        <HeroSection />
-      </section>
-      <section id="why">
-        <WhySection />
-      </section>
-      <section id="services">
-        <ServicesSection />
-      </section>
+      <div className="home-page">
+        <section id="hero">
+          <HeroSection />
+        </section>
+        <section id="why">
+          <WhySection />
+        </section>
+        <section id="services">
+          <ServicesSection />
+        </section>
+      </div>
     </Layout>
   );
 };
