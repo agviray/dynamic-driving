@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../Carousel';
 import PageLink from '../PageLink';
 import studentDriver01 from '../../images/student-driver-01.jpg';
 import studentDriver02 from '../../images/student-driver-02.jpg';
@@ -64,7 +65,7 @@ const ReviewsSection = () => {
     <div className="reviews-content">
       <h2>Student Reviews</h2>
       <div className="main-content">
-        <div className="reviews-cards">{renderedContent}</div>
+        <Carousel>{renderedContent}</Carousel>
       </div>
       <PageLink toPage={'reviews'} name={'See All Reviews'} />
     </div>
