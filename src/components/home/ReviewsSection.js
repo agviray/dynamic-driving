@@ -44,10 +44,12 @@ const ReviewsSection = () => {
               <span className="image-container">
                 <img src={profileImage.src} alt={profileImage.alt} />
               </span>
-              <h3>{name}</h3>
-            </div>
-            <div className="rating">
-              <span>{starRating}</span>
+              <div className="text-container">
+                <h3>{name}</h3>
+                <div className="rating">
+                  Rating: <span>{starRating}</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className="main-content">
