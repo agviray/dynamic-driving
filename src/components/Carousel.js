@@ -39,6 +39,19 @@ const Carousel = ({ children, items }) => {
           <span></span>
         </div>
       </div>
+      <div className="indicators">
+        <div>
+          {items.map((item, index, thisArray) => {
+            return index < thisArray.length ? (
+              <span
+                key={index}
+                className={index === activeItemIndex ? 'current-image' : ''}
+                onClick={() => updateActiveItemIndex(index)}
+              ></span>
+            ) : null;
+          })}
+        </div>
+      </div>
     </div>
   );
 };

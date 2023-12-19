@@ -88,4 +88,40 @@
       }
     }
   }
+
+  // - Carousel indicators (the dots)
+  .indicators {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    & > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      span {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: $lightRed;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 2px;
+        border-radius: 50%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.current-image {
+          width: 12px;
+          height: 12px;
+          background-color: white;
+          border-color: $darkRed;
+        }
+      }
+    }
+  }
 }
