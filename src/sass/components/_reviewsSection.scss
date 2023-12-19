@@ -1,13 +1,43 @@
 .reviews-content {
   @include sectionContentHeading;
   position: relative;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1000px) {
+    max-width: 1400px;
+  }
+
+  // - Mobile view active when viewport width < 1000px;
+  .mobile-content {
+    @media screen and (min-width: 1100px) {
+      display: none;
+    }
+  }
+
+  // - Desktop view active when viewport width >= 1000px;
+  .desktop-content {
+    display: none;
+
+    & > div {
+      display: flex;
+      gap: 1rem;
+    }
+
+    @media screen and (min-width: 1100px) {
+      display: block;
+    }
+  }
 
   // - Individual review card
   .card {
     padding: 2rem;
 
+    .header,
+    .main-content {
+      max-width: 750px;
+      margin: 0 auto;
+    }
     .header {
       .student-details {
         display: flex;

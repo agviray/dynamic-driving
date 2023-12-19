@@ -61,11 +61,18 @@ const ReviewsSection = () => {
     }
   );
 
+  // const
+
   return (
     <div className="reviews-content">
       <h2>Student Reviews</h2>
       <div className="main-content">
-        <Carousel items={studentReviewsCards}>{renderedContent}</Carousel>
+        <div className="mobile-content">
+          <Carousel items={studentReviewsCards}>{renderedContent}</Carousel>
+        </div>
+        <div className="desktop-content">
+          <div>{renderedContent}</div>
+        </div>
       </div>
       <PageLink toPage={'reviews'} name={'See All Reviews'} />
     </div>
