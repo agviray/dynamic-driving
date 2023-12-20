@@ -2,21 +2,9 @@ import React from 'react';
 import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
 import StarRating from '../components/StarRating';
+import PageExternalLink from '../components/PageExternalLink';
 
 const reviews = [
-  {
-    name: 'Ruth K.',
-    location: {
-      area: '',
-      city: 'Houston, ',
-      state: 'TX',
-    },
-    date: '8/30/2022',
-    rating: '5',
-    reviewText: [
-      'Calvin from Dynamic Driving helped my daughter feel comfortable behind the wheel and gain a lot of confidence. She also found Calvin personable and relateable. I also feel comfortable and confident about her driving knowing that she has increased her skill level.',
-    ],
-  },
   {
     name: 'Obim O.',
     location: {
@@ -42,6 +30,19 @@ const reviews = [
     rating: '5',
     reviewText: [
       `Calvin was so knowledgeable!! As a busy Mom, navigating this process was daunting. Worth every penny!! He made it so easy. Did parent taught and private lesson with official driving test - felt so concierge style. Highly recommend!`,
+    ],
+  },
+  {
+    name: 'Betsy G.',
+    location: {
+      area: 'The Heights, ',
+      city: 'Houston, ',
+      state: 'TX',
+    },
+    date: '9/18/2023',
+    rating: '5',
+    reviewText: [
+      `Highly recommend! My son did a private two hour lesson with my son and then also performed his road test. Calvin has great positive energy, I felt more than comfortable having my son driving around alone with him, and his communication/scheduling was super easy and accomodating. We have shared his information with all our friends and will be back for our second child for sure. Thank you for such a positive experience!`,
     ],
   },
   {
@@ -71,16 +72,16 @@ const reviews = [
     ],
   },
   {
-    name: 'Betsy G.',
+    name: 'Sydney B.',
     location: {
-      area: 'The Heights, ',
+      area: '',
       city: 'Houston, ',
       state: 'TX',
     },
-    date: '9/18/2023',
+    date: '3/28/2023',
     rating: '5',
     reviewText: [
-      `Highly recommend! My son did a private two hour lesson with my son and then also performed his road test. Calvin has great positive energy, I felt more than comfortable having my son driving around alone with him, and his communication/scheduling was super easy and accomodating. We have shared his information with all our friends and will be back for our second child for sure. Thank you for such a positive experience!`,
+      `Calvin has been wonderful! My daughter needed help refining her skills, highway driving and just being comfortable behind the wheel. Calvin was easy to communicate with and we are looking forward to having our son drive with him when he gets his permit this summer.`,
     ],
   },
   {
@@ -99,16 +100,16 @@ const reviews = [
     ],
   },
   {
-    name: 'Sydney B.',
+    name: 'Ruth K.',
     location: {
       area: '',
       city: 'Houston, ',
       state: 'TX',
     },
-    date: '3/28/2023',
+    date: '8/30/2022',
     rating: '5',
     reviewText: [
-      `Calvin has been wonderful! My daughter needed help refining her skills, highway driving and just being comfortable behind the wheel. Calvin was easy to communicate with and we are looking forward to having our son drive with him when he gets his permit this summer.`,
+      'Calvin from Dynamic Driving helped my daughter feel comfortable behind the wheel and gain a lot of confidence. She also found Calvin personable and relateable. I also feel comfortable and confident about her driving knowing that she has increased her skill level.',
     ],
   },
 ];
@@ -129,7 +130,7 @@ const Reviews = () => {
                 <div className="rating">
                   <StarRating
                     rating={rating}
-                    containerColor={index % 2 === 0 ? '#ffffff' : '#f5f9fc'}
+                    containerColor={index % 2 !== 0 ? '#ffffff' : '#f5f9fc'}
                   />
                 </div>
                 <div className="date">{date}</div>
@@ -171,13 +172,21 @@ const Reviews = () => {
                   set Dynamic Driving apart.
                 </p>
                 <p>
-                  Whether you're a beginner embarking on your first driving
-                  lessons journey, or someone looking to enhance their skills,
-                  our reviews provide a glimpse into the supportive and
-                  educational environment that we foster.
+                  Check us out on{' '}
+                  <a
+                    href="https://www.yelp.com/biz/dynamic-driving-houston"
+                    target="_blank"
+                  >
+                    <span className="special-inline">Yelp</span>
+                  </a>{' '}
+                  too!
                 </p>
               </div>
               <div className="reviews">{renderedContent}</div>
+              <PageExternalLink
+                toPage={'https://www.yelp.com/biz/dynamic-driving-houston'}
+                name={'View All Yelp Reviews'}
+              />
             </div>
           </section>
         </div>
