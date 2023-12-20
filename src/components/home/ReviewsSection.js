@@ -16,7 +16,7 @@ const studentReviewsCards = [
       state: 'TX',
     },
     date: '12/15/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `At 23 years old, I took my driving lessons with Calvin. I felt nervous during the first lesson, but with Calvin's help, I became comfortable by the third one and passed my test after the fourth.`,
       `Calvin is nice, patient, calm, conversational, and an overall great guy. I highly recommend!`,
@@ -31,7 +31,7 @@ const studentReviewsCards = [
       state: 'TX',
     },
     date: '10/6/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `Calvin was so knowledgeable!! As a busy Mom, navigating this process was daunting. Worth every penny!! He made it so easy. Did parent taught and private lesson with official driving test - felt so concierge style. Highly recommend!`,
     ],
@@ -45,7 +45,7 @@ const studentReviewsCards = [
       state: 'TX',
     },
     date: '9/18/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `Highly recommend! My son did a private two hour lesson with my son and then also performed his road test. Calvin has great positive energy, I felt more than comfortable having my son driving around alone with him, and his communication/scheduling was super easy and accomodating. We have shared his information with all our friends and will be back for our second child for sure. Thank you for such a positive experience!`,
     ],

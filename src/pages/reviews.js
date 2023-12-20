@@ -13,7 +13,7 @@ const reviews = [
       state: 'TX',
     },
     date: '12/15/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `At 23 years old, I took my driving lessons with Calvin. I felt nervous during the first lesson, but with Calvin's help, I became comfortable by the third one and passed my test after the fourth.`,
       `Calvin is nice, patient, calm, conversational, and an overall great guy. I highly recommend!`,
@@ -27,7 +27,7 @@ const reviews = [
       state: 'TX',
     },
     date: '10/6/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `Calvin was so knowledgeable!! As a busy Mom, navigating this process was daunting. Worth every penny!! He made it so easy. Did parent taught and private lesson with official driving test - felt so concierge style. Highly recommend!`,
     ],
@@ -40,7 +40,7 @@ const reviews = [
       state: 'TX',
     },
     date: '9/18/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `Highly recommend! My son did a private two hour lesson with my son and then also performed his road test. Calvin has great positive energy, I felt more than comfortable having my son driving around alone with him, and his communication/scheduling was super easy and accomodating. We have shared his information with all our friends and will be back for our second child for sure. Thank you for such a positive experience!`,
     ],
@@ -53,7 +53,7 @@ const reviews = [
       state: 'TX',
     },
     date: '7/27/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `Mr. Calvin was exceptionally nice and very easy to work with! We called and he answered immediately and was able to get my daughter set up for an appointment to do her driving test right away. Location was easy to find and Mr. Calvin was very clear on instructions and required paperwork. I highly recommend Dynamic Driving!`,
     ],
@@ -66,7 +66,7 @@ const reviews = [
       state: 'TX',
     },
     date: '7/10/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `Calvin offers private 2 hr driving lessons. It's a much more efficient use of time and you don't have to ride in a car with other new drivers. He is very patient and had easy to follow tips for difficult maneuvers like parallel parking and not drifting to one side. I would highly recommend this driving school.`,
     ],
@@ -79,7 +79,7 @@ const reviews = [
       state: 'TX',
     },
     date: '3/28/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `Calvin has been wonderful! My daughter needed help refining her skills, highway driving and just being comfortable behind the wheel. Calvin was easy to communicate with and we are looking forward to having our son drive with him when he gets his permit this summer.`,
     ],
@@ -92,7 +92,7 @@ const reviews = [
       state: 'TX',
     },
     date: '3/6/2023',
-    rating: '5',
+    rating: 5,
     reviewText: [
       `This was the best driving test experience I had with my 3 kiddos.`,
       `My older 2 kids tested at places that were not customer friendly at all. The other testing places made the paperwork process much more difficult than necessary. The other 2 places made the driving test less than comfortable for the student.`,
@@ -107,7 +107,7 @@ const reviews = [
       state: 'TX',
     },
     date: '8/30/2022',
-    rating: '5',
+    rating: 5,
     reviewText: [
       'Calvin from Dynamic Driving helped my daughter feel comfortable behind the wheel and gain a lot of confidence. She also found Calvin personable and relateable. I also feel comfortable and confident about her driving knowing that she has increased her skill level.',
     ],
