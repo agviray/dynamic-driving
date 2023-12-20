@@ -14,7 +14,7 @@ const About = () => {
                 <div className="description">
                   <p>
                     We'll teach you the right skills so you can drive safely,
-                    with confidence
+                    with confidence.
                   </p>
                 </div>
               </div>

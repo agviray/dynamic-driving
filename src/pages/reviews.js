@@ -6,24 +6,29 @@ const Reviews = () => {
   return (
     <Layout>
       <PageTemplate>
-        <section>
-          <div className="reviews-hero">
-            <div className="page-heading-content">
-              <h2>Reviews Hero</h2>
-              <p>This is the reviews page!</p>
+        <div className="reviews-page">
+          <section>
+            <div className="reviews-hero">
+              <div className="page-heading-content">
+                <h2>Reviews</h2>
+                <div className="description">
+                  <p>See what our students have to say about us!</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <h2>Reviews</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur magnam vitae repellat quas dolore, cum corrupti amet,
-            atque porro adipisci magni neque odio, sapiente repudiandae suscipit
-            optio ducimus doloremque sint. Fugit magni libero atque vero
-            laudantium eum, culpa ipsum unde!
-          </p>
-        </section>
+          </section>
+          <section>
+            <div className="main-content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur magnam vitae repellat quas dolore, cum corrupti
+                amet, atque porro adipisci magni neque odio, sapiente
+                repudiandae suscipit optio ducimus doloremque sint. Fugit magni
+                libero atque vero laudantium eum, culpa ipsum unde!
+              </p>
+            </div>
+          </section>
+        </div>
       </PageTemplate>
     </Layout>
   );
