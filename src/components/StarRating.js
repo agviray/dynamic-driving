@@ -59,6 +59,8 @@ const StarRating = ({ rating, containerColor }) => {
           style={partial !== null ? { ...partial } : {}}
         ></span>
         <svg
+          width="20"
+          height="20"
           xmlns="http://www.w3.org/2000/svg"
           fillRule="evenodd"
           strokeLinejoin="round"
