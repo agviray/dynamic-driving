@@ -1,0 +1,36 @@
+.star-rating {
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.star-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  background-color: rgb(223, 221, 221);
+  z-index: -1;
+
+  // - The width property "fills" in the star.
+  & > span.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(250, 204, 0);
+
+    &.full {
+      width: 100%;
+    }
+  }
+
+  // - star-cutout.svg file.
+  svg {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+  }
+}

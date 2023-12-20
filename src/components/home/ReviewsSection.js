@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from '../Carousel';
 import PageLink from '../PageLink';
+import StarRating from '../StarRating';
 import studentDriver01 from '../../images/student-driver-01.jpg';
 import studentDriver02 from '../../images/student-driver-02.jpg';
 import studentDriver03 from '../../images/student-driver-03.jpg';
@@ -48,7 +49,7 @@ const ReviewsSection = () => {
               <div className="text-container">
                 <h3>{name}</h3>
                 <div className="rating">
-                  Rating: <span>{starRating}</span>
+                  <StarRating rating={starRating} />
                 </div>
               </div>
             </div>
