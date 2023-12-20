@@ -46,7 +46,7 @@
       }
     }
   }
-  .main-content {
+  section > .main-content {
     @include paragraphGroup;
     @include parentElement;
 

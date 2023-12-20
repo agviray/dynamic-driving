@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Stars from '../images/icons/star-cutout.svg';
 
 // - Returns Star Rating svg image.
 // - Can render partial star ratings.
@@ -60,25 +59,17 @@ const StarRating = ({ rating }) => {
           style={partial !== null ? { ...partial } : {}}
         ></span>
         <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 80 76"
-          version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          xmlSpace="preserve"
-          xmlnsserif="http://www.serif.com/"
-          style={{
-            fillRule: 'evenodd',
-            clipRule: 'evenodd',
-            strokeLinejoin: 'round',
-            strokeMiterlimit: '2',
-          }}
+          fillRule="evenodd"
+          strokeLinejoin="round"
+          strokeMiterlimit="2"
+          clipRule="evenodd"
+          viewBox="0 0 292 292"
         >
           <path
-            d="M15.136,75.376l-15.136,-0l0,-75.376l79.255,0l-0,75.376l-15.137,-0l-9.354,-28.791l24.491,-17.794l-30.273,-0l-9.355,-28.791l-9.354,28.791l-30.273,-0l24.491,17.794l-9.355,28.791Zm48.982,-0l-48.982,-0l24.491,-17.794l24.491,17.794Z"
-            style={{ fill: '#fff' }}
-          />
+            fill="#fff"
+            d="M291.667 0H0v291.667h291.667V0zM145.833 13.926l32.742 100.768h105.954l-85.719 62.278 32.742 100.769-85.719-62.278-85.718 62.278 32.741-100.769-85.718-62.278h105.954l32.741-100.768z"
+          ></path>
         </svg>
       </span>
     );
