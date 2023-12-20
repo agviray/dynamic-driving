@@ -10,10 +10,9 @@
     background-position: bottom center;
     background-size: cover;
 
-    @media screen and (min-width: 1000px) {
-      height: 40vh;
+    @media screen and (min-width: 1100px) {
       min-height: 300px;
-      max-height: 500px;
+      padding: 200px 0;
     }
     // - Background image overlay (dark tint)
     &::before {
