@@ -8,54 +8,78 @@ import studentDriver03 from '../../images/student-driver-03.jpg';
 
 const studentReviewsCards = [
   {
-    name: 'Tammy N.',
-    profileImage: {
-      src: studentDriver01,
-      alt: 'Profile picture of reviewer',
+    name: 'Obim O.',
+    profileImage: null,
+    location: {
+      area: 'Downtown, ',
+      city: 'Houston, ',
+      state: 'TX',
     },
-    starRating: 5,
-    review: `I couldn't have asked for a better experience while learning how to drive. The instructors were incredibly patient and understanding, especially with someone like me, who was a bit nervous behind the wheel. The lessons were structured in a way that gradually built my confidence and skill set. Sessions were informative, covering everything from road rules to defensive driving techniques. During the hands-on learning, the instructor was supportive. He provided constructive feedback that helped me improve with each lesson. I passed my driving test with flying colors, and I owe it all to the team at Dynamic Driving. Highly recommend.`,
+    date: '12/15/2023',
+    rating: '5',
+    reviewText: [
+      `At 23 years old, I took my driving lessons with Calvin. I felt nervous during the first lesson, but with Calvin's help, I became comfortable by the third one and passed my test after the fourth.`,
+      `Calvin is nice, patient, calm, conversational, and an overall great guy. I highly recommend!`,
+    ],
   },
   {
-    name: 'Debra H.',
-    profileImage: {
-      src: studentDriver02,
-      alt: 'Profile picture of reviewer',
+    name: 'Meghan S.',
+    profileImage: null,
+    location: {
+      area: '',
+      city: 'Austin, ',
+      state: 'TX',
     },
-    starRating: 5,
-    review: `I've always been eager to learn how to drive, and I'm just glad that I chose Dynamic Driving to teach me. Their instructors were not only knowledgeable, but they also made the entire process enjoyable as well. They took the time to understand my strengths and weaknesses, tailoring the lessons to address areas where I needed more practice. I feel confident and prepared for the road now, and I highly recommend Dynamic Driving to anyone looking a personalized driving education.`,
+    date: '10/6/2023',
+    rating: '5',
+    reviewText: [
+      `Calvin was so knowledgeable!! As a busy Mom, navigating this process was daunting. Worth every penny!! He made it so easy. Did parent taught and private lesson with official driving test - felt so concierge style. Highly recommend!`,
+    ],
   },
   {
-    name: 'Danny C.',
-    profileImage: {
-      src: studentDriver03,
-      alt: 'Profile picture of reviewer',
+    name: 'Betsy G.',
+    profileImage: null,
+    location: {
+      area: 'The Heights, ',
+      city: 'Houston, ',
+      state: 'TX',
     },
-    starRating: 5,
-    review: `Choosing Dynamic Driving was the best decision I made on my journey to getting my driver's license. The instructors were not only professional but also friendly, creating a very comfortable learning environment. Their approach to teaching was well-balanced, ensuring that I grasped the concepts and applied them on the road. I also found that the emphasis on defensive driving was particularly valuable, teaching me how to anticipate and handle different situations. Overall, the support and guidance that I received at Dynamic Driving were exceptional, and I now feel confident and prepared as a new driver.`,
+    date: '9/18/2023',
+    rating: '5',
+    reviewText: [
+      `Highly recommend! My son did a private two hour lesson with my son and then also performed his road test. Calvin has great positive energy, I felt more than comfortable having my son driving around alone with him, and his communication/scheduling was super easy and accomodating. We have shared his information with all our friends and will be back for our second child for sure. Thank you for such a positive experience!`,
+    ],
   },
 ];
 
 const ReviewsSection = () => {
   const renderedContent = studentReviewsCards.map(
-    ({ name, profileImage, starRating, review }, index) => {
+    ({ name, location, profileImage, date, rating, reviewText }, index) => {
       return (
         <article className="card" key={index}>
           <div className="header">
             <div className="student-details">
-              <span className="image-container">
-                <img src={profileImage.src} alt={profileImage.alt} />
-              </span>
+              {profileImage ? (
+                <span className="image-container">
+                  <img src={profileImage.src} alt={profileImage.alt} />
+                </span>
+              ) : null}
               <div className="text-container">
                 <h3>{name}</h3>
-                <div className="rating">
-                  <StarRating rating={starRating} containerColor={'#fff'} />
+                <div className="location">
+                  {location.area !== '' ? <span>{location.area}</span> : null}
+                  <span>{location.city}</span>
+                  <span>{location.state}</span>
+                </div>
+                <div className="rating-date">
+                  <StarRating rating={rating} containerColor={'#fff'} />
+                  <div className="date">{date}</div>
                 </div>
               </div>
             </div>
           </div>
           <div className="main-content">
-            <p>{review}</p>
+            <p>{reviewText}</p>
           </div>
         </article>
       );
