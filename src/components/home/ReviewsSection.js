@@ -49,7 +49,7 @@ const ReviewsSection = () => {
               <div className="text-container">
                 <h3>{name}</h3>
                 <div className="rating">
-                  <StarRating rating={starRating} />
+                  <StarRating rating={starRating} containerColor={'#fff'} />
                 </div>
               </div>
             </div>

@@ -127,16 +127,21 @@ const Reviews = () => {
               </div>
               <div className="rating-date">
                 <div className="rating">
-                  <StarRating rating={rating} />
+                  <StarRating
+                    rating={rating}
+                    containerColor={index % 2 === 0 ? '#ffffff' : '#f5f9fc'}
+                  />
                 </div>
                 <div className="date">{date}</div>
               </div>
             </div>
           </div>
           <div className="main-content">
-            {reviewText.map((text, index) => (
-              <p key={index}>{text}</p>
-            ))}
+            <div className="paragraph-group">
+              {reviewText.map((text, index) => (
+                <p key={index}>{text}</p>
+              ))}
+            </div>
           </div>
         </article>
       );
@@ -158,6 +163,20 @@ const Reviews = () => {
           </section>
           <section>
             <div className="main-content">
+              <div className="paragraph-group">
+                <p>
+                  Take a look at firsthand accounts from our students and
+                  discover stories of triumph, gain insights into our
+                  instructors' expertise, and explore the unique features that
+                  set Dynamic Driving apart.
+                </p>
+                <p>
+                  Whether you're a beginner embarking on your first driving
+                  lessons journey, or someone looking to enhance their skills,
+                  our reviews provide a glimpse into the supportive and
+                  educational environment that we foster.
+                </p>
+              </div>
               <div className="reviews">{renderedContent}</div>
             </div>
           </section>

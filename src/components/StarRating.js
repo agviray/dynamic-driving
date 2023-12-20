@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 // - Returns Star Rating svg image.
 // - Can render partial star ratings.
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating, containerColor }) => {
   const [fullStarClasses, setFullStarClasses] = useState([]);
   const [partialStarStyle, setPartialStarStyle] = useState({});
 
@@ -67,7 +67,7 @@ const StarRating = ({ rating }) => {
           viewBox="0 0 292 292"
         >
           <path
-            fill="#fff"
+            fill={containerColor}
             d="M291.667 0H0v291.667h291.667V0zM145.833 13.926l32.742 100.768h105.954l-85.719 62.278 32.742 100.769-85.719-62.278-85.718 62.278 32.741-100.769-85.718-62.278h105.954l32.741-100.768z"
           ></path>
         </svg>
