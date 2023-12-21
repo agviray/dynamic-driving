@@ -1,6 +1,39 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
+import phoneIcon from '../images/icons/phone-icon.png';
+import emailIcon from '../images/icons/email-icon.png';
+
+const operationalHoursDetails = [
+  {
+    day: `Mon`,
+    hours: `9:00AM - 7:00PM`,
+  },
+  {
+    day: `Tue`,
+    hours: `9:00AM - 7:00PM`,
+  },
+  {
+    day: `Wed`,
+    hours: `9:00AM - 7:00PM`,
+  },
+  {
+    day: `Thu`,
+    hours: `9:00AM - 7:00PM`,
+  },
+  {
+    day: `Fri`,
+    hours: `9:00AM - 7:00PM`,
+  },
+  {
+    day: `Sat`,
+    hours: `9:00AM - 7:00PM`,
+  },
+  {
+    day: `Sun`,
+    hours: `9:00AM - 7:00PM`,
+  },
+];
 
 const Contact = () => {
   return (
@@ -36,6 +69,9 @@ const Contact = () => {
                     <div className="contact">
                       <h3>Contact</h3>
                       <div>
+                        {/* <span className="icon-container">
+                          <img src={emailIcon} alt="Email icon" />
+                        </span> */}
                         <a
                           href="mailto:dynamic.driving.houston@gmail.com"
                           target="_blank"
@@ -45,6 +81,9 @@ const Contact = () => {
                         </a>
                       </div>
                       <div>
+                        {/* <span className="icon-container">
+                          <img src={phoneIcon} alt="Phone icon" />
+                        </span> */}
                         <span>(835) 859 - 2519</span>
                       </div>
                     </div>
@@ -53,39 +92,23 @@ const Contact = () => {
                     </div> */}
                     <div className="address">
                       <h3>Address</h3>
-                      <span>9730 Town Park Dr. Suite #95</span>
-                      <span>Houston, TX 77036</span>
+                      <div>
+                        <span>9730 Town Park Dr. Suite #95</span>
+                        <span>Houston, TX 77036</span>
+                      </div>
                       <div className="hours-of-operation">
                         <p className="note">Note: Holiday hours may vary.</p>
                         <ul>
-                          <li>
-                            <span>Mon</span>
-                            <span>9:00AM - 7:00PM</span>
-                          </li>
-                          <li>
-                            <span>Tue</span>
-                            <span>9:00AM - 7:00PM</span>
-                          </li>
-                          <li>
-                            <span>Wed</span>
-                            <span>9:00AM - 7:00PM</span>
-                          </li>
-                          <li>
-                            <span>Thu</span>
-                            <span>9:00AM - 7:00PM</span>
-                          </li>
-                          <li>
-                            <span>Fri</span>
-                            <span>9:00AM - 7:00PM</span>
-                          </li>
-                          <li>
-                            <span>Sat</span>
-                            <span>9:00AM - 7:00PM</span>
-                          </li>
-                          <li>
-                            <span>Sun</span>
-                            <span>9:00AM - 7:00PM</span>
-                          </li>
+                          {operationalHoursDetails.map(
+                            ({ day, hours }, index) => {
+                              return (
+                                <li key={index}>
+                                  <span>{day}</span>
+                                  <span>{hours}</span>
+                                </li>
+                              );
+                            }
+                          )}
                         </ul>
                       </div>
                     </div>
