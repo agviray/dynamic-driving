@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
-const BookButton = ({ text }) => {
+const BookButton = ({ toPage, name }) => {
   return (
     <div className="book-button">
-      <span>{text}</span>
+      <Link to={toPage}>
+        <span>{name}</span>
+      </Link>
     </div>
   );
 };

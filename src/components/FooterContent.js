@@ -126,9 +126,11 @@ const FooterContent = () => {
               <span className="icon-container">
                 <img src={emailIcon} alt="Email icon" />
               </span>
-              <span className="text-container">
-                <span>dynamic.driving.houston@gmail.com</span>
-              </span>
+              <a href="mailto:dynamic.driving.houston@gmail.com">
+                <span className="text-container">
+                  <span>dynamic.driving.houston@gmail.com</span>
+                </span>
+              </a>
             </li>
           </ul>
         </article>

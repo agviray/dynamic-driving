@@ -59,11 +59,11 @@ const Contact = () => {
             <div className="main-content">
               <article>
                 <div className="info">
-                  <h2>Let's connect!</h2>
+                  <h2>Let's connect</h2>
                   <div className="inner-container">
                     <p>
                       Your journey to becoming a confident and skilled driver
-                      begins here. Get started by giving us a call or sending us
+                      begins here! Get started by giving us a call or sending us
                       an email.
                     </p>
                     <div className="contact">
