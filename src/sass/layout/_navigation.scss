@@ -1,7 +1,7 @@
 nav {
   position: relative;
   width: 100%;
-  height: 56px;
+  height: $headerHeight;
   background-color: $midRed;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -133,9 +133,17 @@ nav {
           }
         }
       }
+
+      // - Book Now button container
+      .button-container {
+        height: $headerHeight;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1000px) {
       justify-content: space-between;
 
       .hamburger,
@@ -144,6 +152,7 @@ nav {
       }
 
       .nav-menu {
+        display: flex;
         position: relative;
         height: inherit;
         width: auto;
@@ -161,6 +170,10 @@ nav {
               line-height: $headerHeight;
             }
           }
+        }
+
+        .button-container {
+          padding-left: 1rem;
         }
       }
     }

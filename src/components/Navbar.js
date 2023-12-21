@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import BookButton from './BookButton';
 
 const navlinks = [
   {
@@ -63,6 +64,13 @@ const Navbar = () => {
         </Link>
         <div className={`nav-menu ${isMenuOpen ? 'is-open' : ''}`}>
           <ul>{renderedContent}</ul>
+          <div onClick={toggleMenu} className="button-container">
+            <BookButton
+              toPage={'/contact'}
+              name={'Book Now'}
+              specialStyle={true}
+            />
+          </div>
         </div>
       </div>
     </nav>

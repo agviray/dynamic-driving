@@ -16,7 +16,11 @@ const HeroSection = () => {
           <img src={characters} alt="characters" />
         </span>
       </div>
-      <BookButton toPage="contact" name={`Request An Appointment`} />
+      <BookButton
+        toPage={'/contact'}
+        specialStyle={false}
+        name={`Request An Appointment`}
+      />
     </div>
   );
 };
