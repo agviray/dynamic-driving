@@ -110,8 +110,8 @@ const FooterContent = () => {
                 <img src={locationIcon} alt="Location icon" />
               </span>
               <span className="text-container">
-                <span>1234 Example Street</span>
-                <span>Houston, Texas 77056</span>
+                <span>9730 Town Park Dr. Suite #95</span>
+                <span>Houston, TX 77036</span>
               </span>
             </li>
             <li>
@@ -119,7 +119,7 @@ const FooterContent = () => {
                 <img src={phoneIcon} alt="Phone icon" />
               </span>
               <span className="text-container">
-                <span>(000) 123-4567</span>
+                <span>(835) 859 - 2519</span>
               </span>
             </li>
             <li>
@@ -127,7 +127,7 @@ const FooterContent = () => {
                 <img src={emailIcon} alt="Email icon" />
               </span>
               <span className="text-container">
-                <span>emailaddress@example.com</span>
+                <span>dynamic.driving.houston@gmail.com</span>
               </span>
             </li>
           </ul>
