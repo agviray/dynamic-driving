@@ -11,14 +11,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 
     & > h2 {
       color: $white;
       display: inline-block;
       font-size: 24px;
       letter-spacing: $headingLetterSpacing;
-      padding-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
 
       @media screen and (min-width: 750px) {
         font-size: 30px;

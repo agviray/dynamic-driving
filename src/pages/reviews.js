@@ -157,7 +157,7 @@ const Reviews = () => {
               <div className="page-heading-content">
                 <h2>Reviews</h2>
                 <div className="description">
-                  <p>See what our students have to say about us!</p>
+                  <p>See what our students have to say!</p>
                 </div>
               </div>
             </div>

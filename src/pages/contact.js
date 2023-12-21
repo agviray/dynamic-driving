@@ -6,22 +6,98 @@ const Contact = () => {
   return (
     <Layout>
       <PageTemplate>
-        <section>
-          <div className="contact-hero">
-            <div className="page-heading-content">
-              <h2>Contact Hero</h2>
-              <p>This is the contact page!</p>
+        <div className="contact-page">
+          <section>
+            <div className="contact-hero">
+              <div className="page-heading-content">
+                <h2>Contact</h2>
+                <div className="description">
+                  <div className="paragraph-group">
+                    <p>
+                      Have a question? Ready to begin? Give us a shout. We're
+                      glad to help.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <h2>Contact</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            aperiam explicabo numquam nisi tenetur quidem atque voluptate
-            consectetur praesentium laborum!
-          </p>
-        </section>
+          </section>
+          <section>
+            <div className="main-content">
+              <article>
+                <div className="info">
+                  <h2>Let's connect!</h2>
+                  <div className="inner-container">
+                    <p>
+                      Your journey to becoming a confident and skilled driver
+                      begins here. Get started by giving us a call or sending us
+                      an email.
+                    </p>
+                    <div className="contact">
+                      <h3>Contact</h3>
+                      <div>
+                        <a
+                          href="mailto:dynamic.driving.houston@gmail.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <span>dynamic.driving.houston@gmail.com</span>
+                        </a>
+                      </div>
+                      <div>
+                        <span>(835) 859 - 2519</span>
+                      </div>
+                    </div>
+                    {/* <div className="social">
+                      <ul></ul>
+                    </div> */}
+                    <div className="address">
+                      <h3>Address</h3>
+                      <span>9730 Town Park Dr. Suite #95</span>
+                      <span>Houston, TX 77036</span>
+                      <div className="hours-of-operation">
+                        <p className="note">Note: Holiday hours may vary.</p>
+                        <ul>
+                          <li>
+                            <span>Mon</span>
+                            <span>9:00AM - 7:00PM</span>
+                          </li>
+                          <li>
+                            <span>Tue</span>
+                            <span>9:00AM - 7:00PM</span>
+                          </li>
+                          <li>
+                            <span>Wed</span>
+                            <span>9:00AM - 7:00PM</span>
+                          </li>
+                          <li>
+                            <span>Thu</span>
+                            <span>9:00AM - 7:00PM</span>
+                          </li>
+                          <li>
+                            <span>Fri</span>
+                            <span>9:00AM - 7:00PM</span>
+                          </li>
+                          <li>
+                            <span>Sat</span>
+                            <span>9:00AM - 7:00PM</span>
+                          </li>
+                          <li>
+                            <span>Sun</span>
+                            <span>9:00AM - 7:00PM</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div className="map"></div>
+              </article>
+            </div>
+          </section>
+        </div>
       </PageTemplate>
     </Layout>
   );
