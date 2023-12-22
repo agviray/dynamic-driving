@@ -8,9 +8,9 @@ const Map = () => {
         width="600"
         height="450"
         style={{ border: 'none' }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
   );
