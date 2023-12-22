@@ -29,6 +29,12 @@
     }
   }
 
+  .main-content {
+    .bolded {
+      @include bolded;
+    }
+  }
+
   .services-cards {
     display: grid;
     gap: 1rem;

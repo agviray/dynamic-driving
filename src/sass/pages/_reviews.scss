@@ -35,13 +35,8 @@
       padding: 100px 0;
     }
 
-    .special-inline {
-      display: inline-block;
-      padding: 0.1rem 0.5rem;
-      color: $white;
-      background-color: $midRed;
-      font-family: 'Nunito Sans Bold';
-      border-radius: 5px;
+    .highlighted {
+      @include highlighted;
     }
 
     & > .paragraph-group {
@@ -64,7 +59,7 @@
       }
 
       &:nth-child(odd) {
-        background-color: #f5f9fc;
+        background-color: $lightBlue;
       }
 
       & > .header,

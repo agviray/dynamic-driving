@@ -177,7 +177,7 @@ const Reviews = () => {
                     href="https://www.yelp.com/biz/dynamic-driving-houston"
                     target="_blank"
                   >
-                    <span className="special-inline">Yelp</span>
+                    <span className="highlighted">Yelp</span>
                   </a>{' '}
                   too!
                 </p>

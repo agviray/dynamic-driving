@@ -135,3 +135,17 @@
     }
   }
 }
+
+@mixin highlighted {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  color: $white;
+  background-color: $midRed;
+  font-family: 'Nunito Sans Bold';
+  border-radius: 5px;
+}
+
+@mixin bolded {
+  font-family: 'Nunito Sans Bold', Arial, Helvetica, sans-serif;
+  color: $midRed;
+}

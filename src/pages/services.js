@@ -96,9 +96,12 @@ const Services = () => {
             <div className="main-content">
               <div className="paragraph-group">
                 <p>
-                  Click a service to view its details. If what you're looking
-                  for isn't listed, give us a shout! We're always happy to
-                  answer questions and help in any way that we can.
+                  <span className="bolded">
+                    Click a service to view its details.
+                  </span>{' '}
+                  If what you're looking for isn't listed, give us a shout!
+                  We're always happy to answer questions and help in any way
+                  that we can.
                 </p>
               </div>
               <div className="services-cards">{renderedContent}</div>
