@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
+import Map from '../components/Map';
 import phoneIcon from '../images/icons/phone-icon.png';
 import emailIcon from '../images/icons/email-icon.png';
 
@@ -59,7 +60,7 @@ const Contact = () => {
             <div className="main-content">
               <article>
                 <div className="info">
-                  <h2>Let's connect</h2>
+                  <h2>Let's Connect</h2>
                   <div className="inner-container">
                     <p>
                       Your journey to becoming a confident and skilled driver
@@ -116,7 +117,9 @@ const Contact = () => {
                 </div>
               </article>
               <article>
-                <div className="map"></div>
+                <div className="map-container">
+                  <Map />
+                </div>
               </article>
             </div>
           </section>

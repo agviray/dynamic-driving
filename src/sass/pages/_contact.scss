@@ -35,10 +35,23 @@
   }
 
   .main-content {
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    // - Text and map wrappers
+    & > article {
+      @media screen and (min-width: 1000px) {
+        width: 50%;
+      }
+    }
+
     & > article > div {
+      // - All text container (ie "Let's Connect", "Contact", and "Address" headings and text.
       &.info {
         h2 {
-          padding-bottom: 2rem;
+          padding-bottom: 1.5rem;
         }
 
         .inner-container {
@@ -55,8 +68,6 @@
 
           .address,
           .contact {
-            // display: flex;
-            // flex-direction: column;
             span {
               color: $midBlack;
               display: inline-block;
@@ -118,8 +129,9 @@
         }
       }
 
-      &.map {
-      }
+      // - Map compnenet container.
+      // &.map-container {
+      // }
     }
   }
 }
