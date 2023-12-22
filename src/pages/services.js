@@ -8,6 +8,7 @@ import defensiveDrivingIcon from '../images/icons/traffic-light-and-car.png';
 import privateLessonsIcon from '../images/icons/private-lesson.png';
 import customProgramIcon from '../images/icons/happy-face.png';
 import Accordion from '../components/Accordion';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const servicesCards = [
   {
@@ -60,7 +61,7 @@ const servicesCards = [
   },
 ];
 
-const Services = () => {
+const Services = ({ location }) => {
   const renderedContent = servicesCards.map(
     ({ icon, heading, text }, index) => {
       return (
@@ -89,6 +90,7 @@ const Services = () => {
                     navigate the complexities of the road.
                   </p>
                 </div>
+                {/* <Breadcrumbs currentPage={location} /> */}
               </div>
             </div>
           </section>

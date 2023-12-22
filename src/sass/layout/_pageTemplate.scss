@@ -28,6 +28,7 @@
     & > .description {
       max-width: 550px;
       text-align: center;
+      padding-bottom: 0.5rem;
 
       @media screen and (min-width: 950px) {
         max-width: 700px;

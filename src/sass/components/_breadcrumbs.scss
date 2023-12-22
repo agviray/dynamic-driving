@@ -1,0 +1,15 @@
+.breadcrumbs {
+  color: $white;
+
+  span {
+    padding: 0 0.5rem;
+    color: $white;
+
+    &.current-page {
+      &.bolded {
+        @include bolded;
+        color: $white;
+      }
+    }
+  }
+}

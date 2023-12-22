@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
+import Breadcrumbs from '../components/Breadcrumbs';
 
-const About = () => {
+const About = ({ location }) => {
   return (
     <Layout>
       <PageTemplate>
@@ -17,6 +18,7 @@ const About = () => {
                     with confidence.
                   </p>
                 </div>
+                {/* <Breadcrumbs currentPage={location} /> */}
               </div>
             </div>
           </section>

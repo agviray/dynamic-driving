@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import PageTemplate from '../templates/page-template';
 import StarRating from '../components/StarRating';
 import PageExternalLink from '../components/PageExternalLink';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const reviews = [
   {
@@ -113,7 +114,7 @@ const reviews = [
     ],
   },
 ];
-const Reviews = () => {
+const Reviews = ({ location }) => {
   const renderedContent = reviews.map(
     ({ name, location, date, rating, reviewText }, index) => {
       return (
@@ -159,6 +160,7 @@ const Reviews = () => {
                 <div className="description">
                   <p>See what our students have to say!</p>
                 </div>
+                {/* <Breadcrumbs currentPage={location} /> */}
               </div>
             </div>
           </section>
