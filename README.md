@@ -4,7 +4,7 @@
 
 ## View Demo
 
-Coming soon!
+View prototype [here](https://dynamicdriving.netlify.app/), or enter <em>https://dynamicdriving.netlify.app/</em> in your browser's address bar.
 
 ## Built with
 
