@@ -119,7 +119,7 @@ const FooterContent = () => {
                 <img src={phoneIcon} alt="Phone icon" />
               </span>
               <span className="text-container">
-                <span>(835) 859 - 2519</span>
+                <span>(832) 859 - 2519</span>
               </span>
             </li>
             <li>

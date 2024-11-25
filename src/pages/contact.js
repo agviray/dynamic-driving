@@ -85,7 +85,7 @@ const Contact = () => {
                         {/* <span className="icon-container">
                           <img src={phoneIcon} alt="Phone icon" />
                         </span> */}
-                        <span>(835) 859 - 2519</span>
+                        <span>(832) 859 - 2519</span>
                       </div>
                     </div>
                     {/* <div className="social">
